@@ -7,3 +7,7 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Disable Netlify branding badge
+[dev]
+  autoLaunch = false
