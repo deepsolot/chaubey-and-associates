@@ -38,7 +38,7 @@ const advocates = [
     hindi: "सहयोगी अधिवक्ता (कॉर्पोरेट एवं साइबर लॉ)",
     experience: "10",
     unit: "Years",
-    photo: null,
+    photo: "/nand-jee-upadhyay.jpg",
     specializations: [
       "Corporate & Business Law",
       "Intellectual Property Rights",
@@ -54,7 +54,7 @@ const advocates = [
     hindi: "वरिष्ठ अधिवक्ता एवं प्रमुख परामर्शदाता",
     experience: "40",
     unit: "Years",
-    photo: "/advocate.jpg",
+    photo: "/manoj-chaubey.jpg",
     specializations: [
       "Civil & Criminal Litigation",
       "Service & Administrative Law",
@@ -70,7 +70,7 @@ const advocates = [
     hindi: "वरिष्ठ अधिवक्ता",
     experience: "30",
     unit: "Years",
-    photo: null,
+    photo: "/ashok-seth.png",
     specializations: [
       "Property & Revenue Law",
       "Criminal Defense",

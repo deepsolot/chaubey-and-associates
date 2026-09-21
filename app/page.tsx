@@ -359,13 +359,18 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden border-[3px] border-[#D4AF37]/40 shadow-2xl">
               <Image
-                src="/madan-upadhyay.jpg"
-                alt="Adv. Madan Kumar Upadhyay"
-                width={600}
+                src="/courtroom-panel.jpg"
+                alt="MK Associates Advocates Panel in Court"
+                width={650}
                 height={700}
-                className="w-full h-[500px] object-cover object-top"
+                className="w-full h-[520px] object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <span className="badge text-xs bg-black/80 backdrop-blur-md border-[#D4AF37]/60 text-[#D4AF37]">
+                  Advocates Panel · Supreme Court & High Court Chambers
+                </span>
+              </div>
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-6 -right-6 bg-[#D4AF37] text-black p-5 rounded-lg shadow-xl">
