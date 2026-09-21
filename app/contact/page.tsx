@@ -70,33 +70,64 @@ export default function ContactPage() {
   >("idle");
   const [activeOffice, setActiveOffice] = useState(0);
 
+  const [submittedData, setSubmittedData] = useState<{
+    whatsappUrl: string;
+    bookingId?: string;
+    name: string;
+  } | null>(null);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
+
+    // Construct formatted WhatsApp message for Adv. Madan Kumar Upadhyay (+91 9305592322)
+    const waText =
+      `*New Appointment Request — MK Associates*\n` +
+      `━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+      `👤 *Client Name:* ${form.name}\n` +
+      `📞 *Phone Number:* ${form.phone}\n` +
+      `📧 *Email:* ${form.email || "Not provided"}\n` +
+      `⚖️ *Practice Area:* ${form.area || "General Legal Matter"}\n` +
+      `🏢 *Preferred Office:* ${form.preferredOffice}\n` +
+      `📅 *Preferred Date:* ${form.preferredDate || "Earliest Available"}\n` +
+      `⏰ *Time Slot:* ${form.preferredTime || "Anytime"}\n` +
+      `🗣️ *Consultation Mode:* ${form.consultationType}\n` +
+      `💬 *Case Brief:* ${form.message || "Consultation requested"}\n` +
+      `━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+      `_Sent directly via MK Associates Website Portal_`;
+
+    const waUrl = `https://wa.me/919305592322?text=${encodeURIComponent(waText)}`;
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-      if (res.ok) {
-        setStatus("success");
-        setForm({
-          name: "",
-          phone: "",
-          email: "",
-          area: "",
-          message: "",
-          preferredDate: "",
-          preferredTime: "",
-          consultationType: "in-person",
-          preferredOffice: "New Delhi",
-        });
-      } else {
-        setStatus("error");
+      const json = await res.json().catch(() => ({}));
+
+      setSubmittedData({
+        whatsappUrl: json.whatsappUrl || waUrl,
+        bookingId: json.bookingId || `BK-${Date.now()}`,
+        name: form.name,
+      });
+
+      setStatus("success");
+      // Try opening WhatsApp in new tab
+      if (typeof window !== "undefined") {
+        window.open(json.whatsappUrl || waUrl, "_blank");
       }
     } catch {
-      setStatus("error");
+      // Direct WhatsApp fallback: ensure lead is NEVER lost
+      setSubmittedData({
+        whatsappUrl: waUrl,
+        bookingId: `BK-${Date.now()}`,
+        name: form.name,
+      });
+      setStatus("success");
+      if (typeof window !== "undefined") {
+        window.open(waUrl, "_blank");
+      }
     }
   };
 
@@ -284,38 +315,26 @@ export default function ContactPage() {
                 परामर्श बुकिंग फॉर्म — MK Associates
               </p>
 
-              {status === "success" && (
-                <div className="flex items-start gap-3 bg-green-500/10 border border-green-500/30 rounded-lg p-4 mb-6">
-                  <CheckCircle
-                    size={20}
-                    className="text-green-400 shrink-0 mt-0.5"
-                  />
-                  <div>
-                    <p className="text-green-400 font-semibold text-sm">
-                      Booking Received!
-                    </p>
-                    <p className="text-green-400/70 text-xs">
-                      We&apos;ll confirm your appointment within 2 hours via
-                      call/WhatsApp.
-                    </p>
+              {status === "success" && submittedData && (
+                <div className="bg-[#120E0A] border-2 border-[#D4AF37] rounded-xl p-6 mb-8 shadow-[0_0_30px_rgba(212,175,55,0.25)]">
+                  <div className="flex items-center gap-3 text-green-400 font-bold text-lg mb-2">
+                    <CheckCircle size={24} className="text-green-400 shrink-0" />
+                    <span>Appointment Prepared Successfully!</span>
                   </div>
-                </div>
-              )}
-
-              {status === "error" && (
-                <div className="flex items-start gap-3 bg-red-500/10 border border-red-500/30 rounded-lg p-4 mb-6">
-                  <AlertCircle
-                    size={20}
-                    className="text-red-400 shrink-0 mt-0.5"
-                  />
-                  <div>
-                    <p className="text-red-400 font-semibold text-sm">
-                      Something went wrong
-                    </p>
-                    <p className="text-red-400/70 text-xs">
-                      Please call us directly at +91 9305592322.
-                    </p>
-                  </div>
+                  <p className="text-white/80 text-sm mb-3">
+                    Thank you, <strong className="text-white">{submittedData.name}</strong>. Your consultation details have been compiled for MK Associates (Ref: #{submittedData.bookingId}).
+                  </p>
+                  <p className="text-[#D4AF37] text-xs font-semibold mb-4">
+                    WhatsApp is opening in a new tab. If it did not open automatically, click the button below to send your appointment directly to Adv. Madan Kumar Upadhyay:
+                  </p>
+                  <a
+                    href={submittedData.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-gold flex items-center justify-center gap-2 py-3.5 px-6 text-sm font-bold w-full uppercase tracking-wider shadow-[0_0_20px_rgba(212,175,55,0.4)]"
+                  >
+                    💬 Send to WhatsApp (+91 93055 92322) ↗
+                  </a>
                 </div>
               )}
 
@@ -505,12 +524,12 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="btn-gold w-full justify-center"
+                  className="btn-gold w-full justify-center text-sm py-3.5 font-bold uppercase tracking-wider"
                   disabled={status === "loading"}
                 >
                   {status === "loading"
-                    ? "Submitting..."
-                    : "Book Consultation — पहली परामर्श निःशुल्क"}
+                    ? "Preparing Appointment..."
+                    : "Book & Send via WhatsApp (+91 9305592322) ↗"}
                 </button>
 
                 <p className="text-white/30 text-xs text-center">

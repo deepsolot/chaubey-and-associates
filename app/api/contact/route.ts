@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+
+// In-memory store for active session/server lifetime
+const bookingsStore: Record<string, unknown>[] = [];
 
 export async function POST(req: NextRequest) {
   try {
@@ -14,19 +15,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Save to a local JSON file (acts as lightweight DB)
-    const filePath = path.join(process.cwd(), "data", "bookings.json");
-
-    // Ensure data directory exists
-    if (!fs.existsSync(path.join(process.cwd(), "data"))) {
-      fs.mkdirSync(path.join(process.cwd(), "data"));
-    }
-
-    let bookings: Record<string, unknown>[] = [];
-    if (fs.existsSync(filePath)) {
-      bookings = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    }
-
     const booking = {
       id: `BK-${Date.now()}`,
       timestamp: new Date().toISOString(),
@@ -34,17 +22,38 @@ export async function POST(req: NextRequest) {
       ...data,
     };
 
-    bookings.push(booking);
-    fs.writeFileSync(filePath, JSON.stringify(bookings, null, 2));
+    // Save to in-memory store & log for monitoring
+    bookingsStore.push(booking);
+    console.log("=== NEW APPOINTMENT BOOKING ===");
+    console.log(JSON.stringify(booking, null, 2));
 
-    // In production, you would send an email here using nodemailer
-    // For now, we just return success
+    // Construct formatted WhatsApp message for Adv. Madan Kumar Upadhyay (+91 9305592322)
+    const whatsappText =
+      `*New Appointment Request — MK Associates*\n` +
+      `━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+      `👤 *Client Name:* ${booking.name}\n` +
+      `📞 *Phone Number:* ${booking.phone}\n` +
+      `📧 *Email:* ${booking.email || "Not provided"}\n` +
+      `⚖️ *Practice Area:* ${booking.area || "General Legal Matter"}\n` +
+      `🏢 *Preferred Office:* ${booking.preferredOffice || "New Delhi"}\n` +
+      `📅 *Date:* ${booking.preferredDate || "Earliest Available"}\n` +
+      `⏰ *Time Slot:* ${booking.preferredTime || "Anytime"}\n` +
+      `🗣️ *Mode:* ${booking.consultationType || "Phone"}\n` +
+      `💬 *Case Brief:* ${booking.message || "Consultation requested"}\n` +
+      `━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+      `Booking ID: ${booking.id}\n` +
+      `_Sent directly via MK Associates Website Portal_`;
+
+    const whatsappUrl = `https://wa.me/919305592322?text=${encodeURIComponent(
+      whatsappText
+    )}`;
+
     return NextResponse.json(
       {
         success: true,
         bookingId: booking.id,
-        message:
-          "Consultation request received! We will confirm within 2 hours.",
+        whatsappUrl,
+        message: "Appointment prepared successfully!",
       },
       { status: 200 }
     );
@@ -58,15 +67,5 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET() {
-  // Protected endpoint - in production add authentication
-  try {
-    const filePath = path.join(process.cwd(), "data", "bookings.json");
-    if (!fs.existsSync(filePath)) {
-      return NextResponse.json({ bookings: [] });
-    }
-    const bookings = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    return NextResponse.json({ bookings });
-  } catch {
-    return NextResponse.json({ bookings: [] });
-  }
+  return NextResponse.json({ bookings: bookingsStore });
 }
