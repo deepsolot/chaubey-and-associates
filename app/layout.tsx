@@ -5,15 +5,15 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Chaubey & Associates | Expert Legal Panel — New Delhi · Varanasi · Kaimur",
+  title: "MK Associates | Expert Legal Panel — New Delhi · Varanasi · Kaimur",
   description:
     "Panel of expert advocates led by Adv. Manoj Kumar Chaubey (40 yrs experience). Civil, Criminal, Corporate, IPR, Family & Tax Law. Offices in New Delhi, Varanasi (UP) & Kaimur (Bihar). Call: 9305592322.",
   keywords:
-    "advocate Delhi, lawyer Varanasi, Manoj Kumar Chaubey, Madan Kumar advocate, civil litigation, criminal lawyer, corporate law, IPR, family law, Uttam Nagar advocate, Kaimur Bihar lawyer",
+    "advocate Delhi, lawyer Varanasi, MK Associates, Manoj Kumar Chaubey, Madan Kumar advocate, civil litigation, criminal lawyer, corporate law, IPR, family law, Uttam Nagar advocate, Kaimur Bihar lawyer",
   openGraph: {
-    title: "Chaubey & Associates | Expert Legal Panel",
+    title: "MK Associates | Expert Legal Panel",
     description:
-      "40+ years of combined legal expertise. Civil, Criminal, Corporate, IPR, Family & Tax Law. New Delhi · Varanasi · Kaimur.",
+      "100+ years of combined legal expertise. Civil, Criminal, Corporate, IPR, Family & Tax Law. New Delhi · Varanasi · Kaimur.",
     type: "website",
   },
 };

@@ -47,7 +47,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="font-serif font-bold text-white text-lg leading-none">
-                  Chaubey &amp; Associates
+                  MK Associates
                 </span>
                 <span className="text-[0.6rem] font-display tracking-widest text-[#D4AF37] uppercase">
                   Legal Panel · Since 1985
@@ -208,7 +208,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-white/30 text-xs">
-          <p>© 2026 Chaubey &amp; Associates. All rights reserved.</p>
+          <p>© 2026 MK Associates. All rights reserved.</p>
           <div className="flex gap-4">
             <Link
               href="/privacy"

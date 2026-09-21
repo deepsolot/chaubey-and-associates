@@ -1,7 +1,7 @@
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/919305592322?text=Hello%20Chaubey%20%26%20Associates%2C%20I%20need%20legal%20consultation."
+      href="https://wa.me/919305592322?text=Hello%20MK%20Associates%2C%20I%20need%20legal%20consultation."
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-btn animate-pulse-gold"

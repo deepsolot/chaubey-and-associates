@@ -81,7 +81,7 @@ const testimonials = [
   {
     name: "Priya Singh",
     role: "Family Law Client, Varanasi",
-    text: "Chaubey & Associates guided me through a difficult divorce and custody matter with great compassion. Adv. Ashok Kumar Seth was always available and supportive.",
+    text: "MK Associates guided me through a difficult divorce and custody matter with great compassion. Adv. Ashok Kumar Seth was always available and supportive.",
     rating: 5,
   },
   {
@@ -147,7 +147,7 @@ export default function HomePage() {
               न्याय आपका अधिकार है · Justice is Your Right
             </div>
             <h1 className="font-serif text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
-              Chaubey &amp;{" "}
+              MK{" "}
               <span className="text-gradient">Associates</span>
               <br />
               <span className="text-4xl lg:text-5xl text-white/80">

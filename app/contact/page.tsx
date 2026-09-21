@@ -281,7 +281,7 @@ export default function ContactPage() {
                 Appointment Booking Form
               </h2>
               <p className="text-[#D4AF37]/60 text-sm font-display mb-6">
-                परामर्श बुकिंग फॉर्म — Chaubey &amp; Associates
+                परामर्श बुकिंग फॉर्म — MK Associates
               </p>
 
               {status === "success" && (

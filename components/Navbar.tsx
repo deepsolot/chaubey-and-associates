@@ -38,7 +38,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col leading-tight">
             <span className="font-serif font-bold text-white text-lg leading-none">
-              Chaubey &amp; Associates
+              MK Associates
             </span>
             <span
               className="text-[0.6rem] font-display font-600 tracking-widest uppercase"
