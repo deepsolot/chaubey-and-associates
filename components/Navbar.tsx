@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Scale } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -33,8 +34,15 @@ export default function Navbar() {
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#F0D060] to-[#B8952A] flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(212,175,55,0.5)] transition-shadow">
-            <Scale size={18} className="text-black" />
+          <div className="relative h-11 w-14 flex items-center justify-center shrink-0">
+            <Image
+              src="/logo.png"
+              alt="MK Associates Logo"
+              width={60}
+              height={48}
+              className="h-11 w-auto object-contain drop-shadow-[0_0_12px_rgba(212,175,55,0.4)] group-hover:drop-shadow-[0_0_20px_rgba(212,175,55,0.7)] transition-all"
+              priority
+            />
           </div>
           <div className="flex flex-col leading-tight">
             <span className="font-serif font-bold text-white text-lg leading-none">

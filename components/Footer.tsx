@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Scale, Phone, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const services = [
   "Civil & Criminal Litigation",
@@ -41,9 +42,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#F0D060] to-[#B8952A] flex items-center justify-center">
-                <Scale size={20} className="text-black" />
+            <Link href="/" className="flex items-center gap-3 mb-5 group">
+              <div className="relative h-14 w-18 flex items-center justify-center shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="MK Associates Logo"
+                  width={72}
+                  height={58}
+                  className="h-14 w-auto object-contain drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:drop-shadow-[0_0_22px_rgba(212,175,55,0.6)] transition-all"
+                />
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="font-serif font-bold text-white text-lg leading-none">
