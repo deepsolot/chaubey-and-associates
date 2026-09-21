@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { articles } from "@/data/articles";
 import {
   Calendar,
@@ -106,6 +107,26 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         </header>
 
+        {/* Featured Banner Image */}
+        <div className="relative h-64 sm:h-80 md:h-[400px] w-full rounded-2xl overflow-hidden mb-10 border border-[#D4AF37]/30 shadow-[0_0_35px_rgba(212,175,55,0.15)] bg-black/60">
+          <Image
+            src={article.image}
+            alt={article.title}
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 flex items-center gap-2 z-10">
+            <span className="badge text-xs uppercase tracking-wider bg-black/80 backdrop-blur-md border-[#D4AF37]">
+              {article.category}
+            </span>
+            <span className="text-white/80 text-xs bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+              {article.readTime}
+            </span>
+          </div>
+        </div>
+
         {/* Lead Excerpt */}
         <div className="glass-card p-6 mb-10 border-l-4 border-l-[#D4AF37]">
           <p className="text-white/90 text-base sm:text-lg leading-relaxed italic font-serif">
@@ -205,20 +226,31 @@ export default async function ArticlePage({ params }: Props) {
                 href={`/blog/${rel.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="blog-card p-6 block group"
+                className="blog-card overflow-hidden block group"
               >
-                <span className="badge text-[0.65rem] mb-3 inline-block">
-                  {rel.category}
-                </span>
-                <h4 className="font-serif text-lg text-white group-hover:text-[#D4AF37] transition-colors mb-2">
-                  {rel.title}
-                </h4>
-                <p className="text-xs text-white/50 line-clamp-2 mb-4">
-                  {rel.excerpt}
-                </p>
-                <span className="inline-flex items-center gap-1 text-xs text-[#D4AF37] font-semibold">
-                  Read in New Tab <ArrowRight size={12} />
-                </span>
+                <div className="h-40 relative overflow-hidden bg-black/50">
+                  <Image
+                    src={rel.image}
+                    alt={rel.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                  <span className="absolute top-3 left-3 badge text-[0.6rem] bg-black/70 backdrop-blur-sm">
+                    {rel.category}
+                  </span>
+                </div>
+                <div className="p-5">
+                  <h4 className="font-serif text-lg text-white group-hover:text-[#D4AF37] transition-colors mb-2 line-clamp-2 leading-snug">
+                    {rel.title}
+                  </h4>
+                  <p className="text-xs text-white/50 line-clamp-2 mb-4">
+                    {rel.excerpt}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-xs text-[#D4AF37] font-semibold">
+                    Read in New Tab <ArrowRight size={12} />
+                  </span>
+                </div>
               </Link>
             ))}
           </div>

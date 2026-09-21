@@ -99,6 +99,7 @@ const blogPosts = [
     hindi: "बीएनएस 2023: आईपीसी से प्रमुख बदलाव",
     date: "Sep 15, 2026",
     category: "Criminal Law",
+    image: "/blog/bns.jpg",
     excerpt:
       "The Bharatiya Nyaya Sanhita 2023 has replaced the IPC. Here are the critical changes every citizen must know.",
   },
@@ -108,6 +109,7 @@ const blogPosts = [
     hindi: "छोटे व्यवसायों के लिए जीएसटी अनुपालन",
     date: "Sep 8, 2026",
     category: "Tax Law",
+    image: "/blog/gst.jpg",
     excerpt:
       "A practical guide to GST registration, filing deadlines, and avoiding common compliance pitfalls.",
   },
@@ -117,6 +119,7 @@ const blogPosts = [
     hindi: "भारत में ट्रेडमार्क पंजीकरण कैसे करें",
     date: "Sep 1, 2026",
     category: "IPR",
+    image: "/blog/trademark.jpg",
     excerpt:
       "Step-by-step process for trademark registration, from filing to approval. Protect your brand today.",
   },
@@ -521,11 +524,14 @@ export default function HomePage() {
                 className="blog-card group block"
                 title={`Open "${post.title}" in new tab`}
               >
-                <div className="h-40 bg-gradient-to-br from-[#D4AF37]/10 to-black/30 flex items-center justify-center">
-                  <BookOpen
-                    size={48}
-                    className="text-[#D4AF37]/30 group-hover:text-[#D4AF37] transition-colors"
+                <div className="h-44 relative overflow-hidden bg-black/40">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-3">

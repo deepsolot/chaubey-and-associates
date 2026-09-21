@@ -8,6 +8,7 @@ export interface Article {
   readTime: string;
   author: string;
   authorRole: string;
+  image: string;
   tags: string[];
   excerpt: string;
   content: {
@@ -29,6 +30,7 @@ export const articles: Article[] = [
     readTime: "7 min read",
     author: "Adv. Manoj Kumar Chaubey",
     authorRole: "Senior Partner · 40 Years Trial & Appellate Practice",
+    image: "/blog/bns.jpg",
     tags: ["BNS 2023", "IPC", "Criminal Law", "Bail Provisions", "Legal Reform"],
     excerpt:
       "The Bharatiya Nyaya Sanhita (BNS) 2023 has overhauled India's penal framework. This comprehensive analysis breaks down critical modifications in bail norms, definitions of offences, community service provisions, and procedural rights.",
@@ -87,6 +89,7 @@ export const articles: Article[] = [
     readTime: "10 min read",
     author: "Adv. Nand Jee Kumar Upadhyay",
     authorRole: "Associate Counsel · Corporate & Tax Litigation",
+    image: "/blog/gst.jpg",
     tags: ["GST", "Tax Law", "MSME", "Input Tax Credit", "Audit"],
     excerpt:
       "A complete legal handbook for Indian startups and MSMEs on GST registration, GSTR-1 and GSTR-3B filings, Input Tax Credit (ITC) reconciliation, and handling Section 73/74 show-cause notices.",
@@ -133,6 +136,7 @@ export const articles: Article[] = [
     readTime: "8 min read",
     author: "Adv. Madan Kumar Upadhyay",
     authorRole: "Multi-Domain Counsel · Quality Inspector, Technical & IP Strategy",
+    image: "/blog/trademark.jpg",
     tags: ["Trademark", "IPR", "Brand Protection", "MSME", "Copyright"],
     excerpt:
       "Protect your brand identity from counterfeiters. Learn how to conduct trademark search across 45 classes, file Form TM-A, overcome Section 9 and 11 objections, and secure your registration certificate.",
@@ -185,6 +189,7 @@ export const articles: Article[] = [
     readTime: "9 min read",
     author: "Adv. Manoj Kumar Chaubey",
     authorRole: "Senior Partner · High Court & Supreme Court Litigator",
+    image: "/blog/pil.jpg",
     tags: ["PIL", "Constitutional Law", "Article 32", "Article 226", "Public Rights"],
     excerpt:
       "Public Interest Litigation is India's most powerful constitutional mechanism for systemic reform. Discover the jurisdiction of High Courts and Supreme Court, permissible causes, and procedural guidelines.",
@@ -235,6 +240,7 @@ export const articles: Article[] = [
     readTime: "12 min read",
     author: "Adv. Madan Kumar Upadhyay",
     authorRole: "Multi-Domain Counsel · Cyber Forensics & Systems Auditor",
+    image: "/blog/cyber.jpg",
     tags: ["Cyber Crime", "IT Act 2000", "DPDP Act", "Online Fraud", "Financial Scam"],
     excerpt:
       "From UPI scams and identity theft to corporate data breaches, understand your rights under the Information Technology Act, 2000, Golden Hour reporting protocols, and how to recover defrauded funds.",
@@ -282,6 +288,7 @@ export const articles: Article[] = [
     readTime: "11 min read",
     author: "Adv. Ashok Kumar Seth",
     authorRole: "Senior Counsel · 30 Years Land, Title & Civil Practice",
+    image: "/blog/property.jpg",
     tags: ["Property Disputes", "Civil Law", "Partition Suit", "Injunction", "RERA"],
     excerpt:
       "Land encroachment, boundary overlaps, forged sale deeds, and ancestral partition disputes. Learn about Declaratory Suits, Injunctions under Order 39 CPC, and Revenue Court proceedings in Delhi, UP, and Bihar.",

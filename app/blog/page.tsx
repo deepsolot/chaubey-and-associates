@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { BookOpen, ArrowRight, Calendar, Tag, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Calendar, Tag, ExternalLink } from "lucide-react";
 import { articles } from "@/data/articles";
 
 const categories = [
@@ -107,14 +108,20 @@ export default function BlogPage() {
                 className="blog-card group block cursor-pointer"
                 title={`Open "${post.title}" in new tab`}
               >
-                <div className="h-44 bg-gradient-to-br from-[#D4AF37]/15 via-black/30 to-black flex items-center justify-center relative overflow-hidden">
-                  <BookOpen
-                    size={52}
-                    className="text-[#D4AF37]/30 group-hover:text-[#D4AF37] group-hover:scale-110 transition-all duration-300"
+                <div className="h-48 relative overflow-hidden bg-black/40">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <div className="absolute top-3 right-3 flex items-center gap-1.5">
-                    <span className="badge text-[0.6rem]">{post.category}</span>
-                    <span className="bg-black/60 p-1 rounded text-white/50 group-hover:text-white transition-colors">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+                  <div className="absolute top-3 right-3 flex items-center gap-1.5 z-10">
+                    <span className="badge text-[0.6rem] bg-black/70 backdrop-blur-sm border-[#D4AF37]/50">
+                      {post.category}
+                    </span>
+                    <span className="bg-black/70 backdrop-blur-sm p-1 rounded text-white/70 group-hover:text-[#D4AF37] transition-colors">
                       <ExternalLink size={12} />
                     </span>
                   </div>
