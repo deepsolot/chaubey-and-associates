@@ -589,8 +589,8 @@ export default function HomePage() {
               Your first consultation is free. We listen, we advise, we fight.
             </p>
             <p className="text-[#D4AF37]/60 font-serif italic mb-8">
-              "पहली परामर्श निःशुल्क। हम सुनते हैं, सलाह देते हैं, लड़ते
-              हैं।"
+              &quot;पहली परामर्श निःशुल्क। हम सुनते हैं, सलाह देते हैं, लड़ते
+              हैं।&quot;
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact" className="btn-gold">

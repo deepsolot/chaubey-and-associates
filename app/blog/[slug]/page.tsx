@@ -7,10 +7,8 @@ import {
   Clock,
   User,
   ArrowLeft,
-  Share2,
   Tag,
   ShieldAlert,
-  Phone,
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
