@@ -165,16 +165,14 @@ export default function ServicesPage() {
       {/* Services */}
       <section className="py-20 bg-[#0a0a0a]">
         <div className="container-custom space-y-24">
-          {services.map((service, idx) => (
+          {services.map((service) => (
             <div
               key={service.id}
               id={service.id}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-14 items-start ${
-                idx % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
+              className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start pb-16 border-b border-white/10 last:border-0"
             >
               {/* Content */}
-              <div className={idx % 2 === 1 ? "lg:order-2" : ""}>
+              <div>
                 <div className="w-14 h-14 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center mb-6">
                   <service.icon size={26} className="text-[#D4AF37]" />
                 </div>
@@ -195,12 +193,13 @@ export default function ServicesPage() {
               </div>
 
               {/* Checklist */}
-              <div
-                className={`glass-card p-7 ${idx % 2 === 1 ? "lg:order-1" : ""}`}
-              >
-                <h3 className="font-display text-sm font-600 tracking-widest text-[#D4AF37] uppercase mb-5">
-                  What&apos;s Covered
-                </h3>
+              <div className="glass-card p-7 border border-[#D4AF37]/20 shadow-lg">
+                <div className="flex items-center gap-2 mb-5">
+                  <service.icon size={18} className="text-[#D4AF37]" />
+                  <h3 className="font-display text-sm font-600 tracking-widest text-[#D4AF37] uppercase">
+                    What&apos;s Covered · {service.title}
+                  </h3>
+                </div>
                 <ul className="space-y-3">
                   {service.items.map((item) => (
                     <li key={item} className="flex items-start gap-3">

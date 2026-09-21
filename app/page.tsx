@@ -35,6 +35,7 @@ const practiceAreas = [
     hindi: "सिविल एवं आपराधिक वाद",
     desc: "Property disputes, contracts, bail, trial, appeals under IPC/BNS, consumer grievances.",
     color: "from-amber-500/20 to-transparent",
+    href: "/services#litigation",
   },
   {
     icon: Briefcase,
@@ -42,6 +43,7 @@ const practiceAreas = [
     hindi: "कॉर्पोरेट एवं व्यापार कानून",
     desc: "Company incorporation, M&A agreements, regulatory advisory for startups & fintech.",
     color: "from-blue-500/10 to-transparent",
+    href: "/services#corporate",
   },
   {
     icon: Shield,
@@ -49,6 +51,7 @@ const practiceAreas = [
     hindi: "बौद्धिक संपदा अधिकार",
     desc: "Trademark registration, patent filing & enforcement, copyright protection.",
     color: "from-purple-500/10 to-transparent",
+    href: "/services#ipr",
   },
   {
     icon: Heart,
@@ -56,6 +59,7 @@ const practiceAreas = [
     hindi: "पारिवारिक एवं व्यक्तिगत कानून",
     desc: "Divorce, custody, alimony, succession & wills, domestic violence cases.",
     color: "from-rose-500/10 to-transparent",
+    href: "/services#family",
   },
   {
     icon: TrendingUp,
@@ -63,6 +67,7 @@ const practiceAreas = [
     hindi: "कर एवं वित्तीय कानून",
     desc: "GST, Income Tax compliance, tax structuring & litigation.",
     color: "from-green-500/10 to-transparent",
+    href: "/services#tax",
   },
   {
     icon: Cpu,
@@ -70,6 +75,7 @@ const practiceAreas = [
     hindi: "साइबर कानून एवं उभरते क्षेत्र",
     desc: "Data privacy, environmental law, consumer protection, arbitration & mediation.",
     color: "from-cyan-500/10 to-transparent",
+    href: "/services#emerging",
   },
   {
     icon: ClipboardList,
@@ -77,6 +83,7 @@ const practiceAreas = [
     hindi: "सेवा मामले एवं सरकारी कानून",
     desc: "Increments, medical pension, promotion, posting, CCS conduct rules & departmental enquiries.",
     color: "from-orange-500/10 to-transparent",
+    href: "/services#service-matters",
   },
   {
     icon: Medal,
@@ -84,6 +91,7 @@ const practiceAreas = [
     hindi: "सशस्त्र बल कानून",
     desc: "Court martial defence, AFT appeals, Army/Air Force/Navy Act matters & ex-servicemen pension.",
     color: "from-emerald-500/10 to-transparent",
+    href: "/services#armed-forces",
   },
 ];
 
@@ -316,7 +324,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {practiceAreas.map((area) => (
               <Link
-                href="/services"
+                href={area.href}
                 key={area.title}
                 className="glass-card p-7 group cursor-pointer block"
               >
