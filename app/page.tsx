@@ -177,9 +177,10 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="text-white/70 text-lg mb-3 leading-relaxed max-w-xl">
-              A panel of four distinguished advocates with 100+ combined years
-              of experience — Adv. Manoj Kumar Chaubey, Adv. Ashok Kumar Seth,
-              Adv. Madan Kumar Upadhyay &amp; Adv. Nand Jee Kumar Upadhyay.
+              A panel of distinguished advocates with 100+ combined years
+              of experience — led by Adv. Madan Kumar Upadhyay, Adv. Nand Jee
+              Kumar Upadhyay, alongside Adv. Manoj Kumar Chaubey &amp; Adv. Ashok
+              Kumar Seth.
             </p>
             <p className="text-[#D4AF37]/70 text-sm mb-10 italic font-serif">
               &quot;100+ वर्षों के संयुक्त अनुभव के साथ, हम आपके हर कानूनी
@@ -358,8 +359,8 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden border-[3px] border-[#D4AF37]/40 shadow-2xl">
               <Image
-                src="/advocate.jpg"
-                alt="Adv. Manoj Kumar Chaubey"
+                src="/madan-upadhyay.jpg"
+                alt="Adv. Madan Kumar Upadhyay"
                 width={600}
                 height={700}
                 className="w-full h-[500px] object-cover object-top"
@@ -386,22 +387,21 @@ export default function HomePage() {
             </h2>
             <div className="gold-divider mb-6" />
             <p className="text-white/60 mb-4 leading-relaxed">
-              Led by Adv. Manoj Kumar Chaubey (40 years), our panel also
-              features Adv. Ashok Kumar Seth (30 years), Adv. Madan Kumar
-              Upadhyay (20 years, multi-domain expert), and Adv. Nand Jee Kumar
-              Upadhyay (10 years). Together, they cover every major area of
-              Indian law across three offices.
+              Spearheaded by Adv. Madan Kumar Upadhyay (20 years, multi-domain expert &amp; Allahabad University alumnus)
+              and Adv. Nand Jee Kumar Upadhyay (10 years, Corporate &amp; Cyber Law), alongside seasoned veterans
+              Adv. Manoj Kumar Chaubey (40 years) and Adv. Ashok Kumar Seth (30 years).
+              Together, our panel provides comprehensive legal counsel across Delhi, Varanasi, and Bihar.
             </p>
             <p className="text-[#D4AF37]/70 italic font-serif mb-6">
-              मुवक्किल की आवाज।"
+              &quot;सत्यमेव जयते — न्याय की लड़ाई में हर मुवक्किल की आवाज।&quot;
             </p>
             <ul className="space-y-3 mb-8">
               {[
-                "LLB & LLM from University of Delhi",
-                "Member, Bar Council of Delhi",
-                "15+ years High Court & District Court practice",
-                "Specialization in Civil, Criminal & Corporate Law",
-                "PIL & constitutional matters before Supreme Court",
+                "Alumnus, Prestigious University of Allahabad",
+                "Multi-Domain Expertise: Legal, Administrative & Technical",
+                "High Court, District Court & Tribunal Practice",
+                "Corporate Compliance, Cyber Law, Civil & Criminal Litigation",
+                "Offices in New Delhi, Varanasi (UP) & Kaimur (Bihar)",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle

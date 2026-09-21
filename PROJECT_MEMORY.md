@@ -21,12 +21,12 @@
 
 | Advocate | Designation | Experience | Specializations | Photo Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Adv. Manoj Kumar Chaubey** | Senior Partner | 40 Years | Civil, Criminal, Administrative & PIL Litigator | Placeholder (to be updated later) |
+| **Adv. Madan Kumar Upadhyay** | Lead Multi-Domain Counsel | 20 Years | Legal, Admin, Technical, Aeronautical, Logistics, Mentor, Quality Inspector & Systems Auditor (Univ. of Allahabad) | **Genuine Photo Active** (`/public/madan-upadhyay.jpg`) |
+| **Adv. Nand Jee Kumar Upadhyay** | Corporate & Cyber Law Counsel | 10 Years | Corporate, Tax (GST/IT), IPR & Cyber Law | Placeholder (to be updated later) |
+| **Adv. Manoj Kumar Chaubey** | Senior Partner & Litigation Counsel | 40 Years | Civil, Criminal, Administrative & PIL Litigator | Placeholder (to be updated later) |
 | **Adv. Ashok Kumar Seth** | Senior Counsel | 30 Years | Property, Land Titles, Civil & Family Law | Placeholder (to be updated later) |
-| **Adv. Madan Kumar Upadhyay** | Multi-Domain Counsel | 20 Years | Legal, Admin, Technical, Aeronautical, Logistics, Mentor, Quality Inspector & Systems Auditor | **Genuine Photo Active** (`/public/madan-upadhyay.jpg`) |
-| **Adv. Nand Jee Kumar Upadhyay** | Associate Counsel | 10 Years | Corporate, Tax (GST/IT), IPR & Cyber Law | Placeholder (to be updated later) |
 
-> **Photo Policy**: The user explicitly instructed to **update the other 3 advocates' photos later**. Adv. Madan Kumar Upadhyay's real photo is installed. When the user provides the remaining photos, replace them in `/public/` and link them in `/app/about/page.tsx`.
+> **Advocate Priority Order**: Adv. Madan Kumar Upadhyay is established as the principal lead advocate on the portal, followed by Adv. Nand Jee Kumar Upadhyay, then Adv. Manoj Kumar Chaubey & Adv. Ashok Kumar Seth. Real photo for Adv. Madan Kumar Upadhyay is installed.
 
 ---
 
