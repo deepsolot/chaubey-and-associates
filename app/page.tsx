@@ -94,6 +94,7 @@ const testimonials = [
 
 const blogPosts = [
   {
+    slug: "understanding-bns-2023-key-changes-from-ipc",
     title: "Understanding BNS 2023: Key Changes from IPC",
     hindi: "बीएनएस 2023: आईपीसी से प्रमुख बदलाव",
     date: "Sep 15, 2026",
@@ -102,6 +103,7 @@ const blogPosts = [
       "The Bharatiya Nyaya Sanhita 2023 has replaced the IPC. Here are the critical changes every citizen must know.",
   },
   {
+    slug: "gst-compliance-for-small-businesses-guide",
     title: "GST Compliance for Small Businesses",
     hindi: "छोटे व्यवसायों के लिए जीएसटी अनुपालन",
     date: "Sep 8, 2026",
@@ -110,6 +112,7 @@ const blogPosts = [
       "A practical guide to GST registration, filing deadlines, and avoiding common compliance pitfalls.",
   },
   {
+    slug: "how-to-register-trademark-in-india-step-by-step",
     title: "How to Register a Trademark in India",
     hindi: "भारत में ट्रेडमार्क पंजीकरण कैसे करें",
     date: "Sep 1, 2026",
@@ -511,14 +514,17 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {blogPosts.map((post) => (
               <Link
-                href="/blog"
+                href={`/blog/${post.slug}`}
                 key={post.title}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="blog-card group block"
+                title={`Open "${post.title}" in new tab`}
               >
                 <div className="h-40 bg-gradient-to-br from-[#D4AF37]/10 to-black/30 flex items-center justify-center">
                   <BookOpen
                     size={48}
-                    className="text-[#D4AF37]/30 group-hover:text-[#D4AF37]/50 transition-colors"
+                    className="text-[#D4AF37]/30 group-hover:text-[#D4AF37] transition-colors"
                   />
                 </div>
                 <div className="p-5">
@@ -534,9 +540,12 @@ export default function HomePage() {
                   <p className="text-[#D4AF37]/50 text-xs font-display mb-3">
                     {post.hindi}
                   </p>
-                  <p className="text-white/50 text-sm leading-relaxed line-clamp-2">
+                  <p className="text-white/50 text-sm leading-relaxed line-clamp-2 mb-4">
                     {post.excerpt}
                   </p>
+                  <span className="inline-flex items-center gap-1 text-xs text-[#D4AF37] font-semibold">
+                    Read Article ↗
+                  </span>
                 </div>
               </Link>
             ))}
