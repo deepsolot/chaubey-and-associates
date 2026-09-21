@@ -9,6 +9,8 @@ const services = [
   { label: "Family & Personal Law", href: "/services#family" },
   { label: "Taxation & Financial Law", href: "/services#tax" },
   { label: "Cyber Law & Arbitration", href: "/services#emerging" },
+  { label: "Service Matters & Govt. Law", href: "/services#service-matters" },
+  { label: "Armed Forces Law", href: "/services#armed-forces" },
 ];
 
 const quickLinks = [

@@ -10,6 +10,8 @@ import {
   ArrowRight,
   Globe,
   FileText,
+  Medal,
+  ClipboardList,
 } from "lucide-react";
 
 const services = [
@@ -109,6 +111,38 @@ const services = [
     ],
     desc: "The law is constantly evolving. We stay ahead of emerging legal frontiers — from cybercrime prosecution to environmental compliance — ensuring clients have a trusted guide in uncharted legal territory.",
   },
+  {
+    id: "service-matters",
+    icon: ClipboardList,
+    title: "Service Matters & Government Law",
+    hindi: "सेवा मामले एवं सरकारी कानून",
+    tagline: "Protecting the Rights of Government Servants",
+    items: [
+      "Increments — stagnation increment disputes & recovery challenges (वेतन वृद्धि विवाद)",
+      "Medical Pension — disability pension, invalid pension & CGHS matters (चिकित्सा पेंशन)",
+      "Promotion — DPC irregularities, seniority disputes & zone of consideration (पदोन्नति विवाद)",
+      "Posting & Transfer — arbitrary transfers, hardship postings & stay orders (पोस्टिंग एवं स्थानांतरण)",
+      "CCS Conduct Rules — charge sheet defence, major/minor penalty proceedings (सीसीएस आचरण नियम)",
+      "Departmental Enquiry & Appeal — representation before appellate authority & CAT",
+    ],
+    desc: "Government servants face unique legal challenges that require specialised knowledge of service law. Our panel has deep expertise in Central Civil Services rules, Administrative Tribunals, and High Court writs — ensuring every public servant gets the vigorous defence they deserve.",
+  },
+  {
+    id: "armed-forces",
+    icon: Medal,
+    title: "Armed Forces Law",
+    hindi: "सशस्त्र बल कानून",
+    tagline: "Defending Those Who Defend the Nation",
+    items: [
+      "Court Martial — Summary, District & General Court Martial defence (कोर्ट मार्शल)",
+      "Armed Forces Tribunal (AFT) — appeals & original applications (सशस्त्र बल न्यायाधिकरण)",
+      "Criminal matters under Army Act / Air Force Act / Navy Act",
+      "Administrative proceedings — compulsory retirement & dismissal challenges",
+      "Pension & gratuity disputes for ex-servicemen & widows (पेंशन एवं अनुग्रह राशि)",
+      "Disability pension, ECHS entitlements & service record corrections",
+    ],
+    desc: "Armed Forces personnel face a distinct legal framework that civilian advocates rarely understand. With expertise spanning the Army Act, Air Force Act, and Navy Act — as well as the Armed Forces Tribunal — our panel provides fearless, specialised representation to servicemen, ex-servicemen, and their families.",
+  },
 ];
 
 export default function ServicesPage() {
@@ -122,8 +156,8 @@ export default function ServicesPage() {
             Comprehensive <span>Legal Services</span>
           </h1>
           <p className="text-white/50 max-w-2xl mx-auto">
-            Six core practice areas. Decades of expertise. One trusted advocate
-            by your side.
+            Eight core practice areas — from civil litigation to Armed Forces law.
+            Decades of expertise. One trusted panel by your side.
           </p>
         </div>
       </section>

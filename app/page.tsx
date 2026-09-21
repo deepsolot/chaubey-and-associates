@@ -17,6 +17,8 @@ import {
   Heart,
   TrendingUp,
   Cpu,
+  Medal,
+  ClipboardList,
 } from "lucide-react";
 
 const stats = [
@@ -68,6 +70,20 @@ const practiceAreas = [
     hindi: "साइबर कानून एवं उभरते क्षेत्र",
     desc: "Data privacy, environmental law, consumer protection, arbitration & mediation.",
     color: "from-cyan-500/10 to-transparent",
+  },
+  {
+    icon: ClipboardList,
+    title: "Service Matters & Govt. Law",
+    hindi: "सेवा मामले एवं सरकारी कानून",
+    desc: "Increments, medical pension, promotion, posting, CCS conduct rules & departmental enquiries.",
+    color: "from-orange-500/10 to-transparent",
+  },
+  {
+    icon: Medal,
+    title: "Armed Forces Law",
+    hindi: "सशस्त्र बल कानून",
+    desc: "Court martial defence, AFT appeals, Army/Air Force/Navy Act matters & ex-servicemen pension.",
+    color: "from-emerald-500/10 to-transparent",
   },
 ];
 
