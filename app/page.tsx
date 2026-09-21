@@ -1,69 +1,578 @@
 import Image from "next/image";
+import Link from "next/link";
+import {
+  ArrowRight,
+  Scale,
+  Shield,
+  Award,
+  Users,
+  CheckCircle,
+  Star,
+  Phone,
+  Calendar,
+  Briefcase,
+  BookOpen,
+  FileText,
+  Globe,
+  Heart,
+  TrendingUp,
+  Cpu,
+} from "lucide-react";
 
-export default function Home() {
+const stats = [
+  { number: "15+", label: "Years Experience", sublabel: "वर्ष अनुभव" },
+  { number: "2,000+", label: "Cases Handled", sublabel: "मामले निपटाए" },
+  { number: "95%", label: "Success Rate", sublabel: "सफलता दर" },
+  { number: "500+", label: "Happy Clients", sublabel: "संतुष्ट मुवक्किल" },
+];
+
+const practiceAreas = [
+  {
+    icon: Scale,
+    title: "Civil & Criminal Litigation",
+    hindi: "सिविल एवं आपराधिक वाद",
+    desc: "Property disputes, contracts, bail, trial, appeals under IPC/BNS, consumer grievances.",
+    color: "from-amber-500/20 to-transparent",
+  },
+  {
+    icon: Briefcase,
+    title: "Corporate & Business Law",
+    hindi: "कॉर्पोरेट एवं व्यापार कानून",
+    desc: "Company incorporation, M&A agreements, regulatory advisory for startups & fintech.",
+    color: "from-blue-500/10 to-transparent",
+  },
+  {
+    icon: Shield,
+    title: "Intellectual Property Rights",
+    hindi: "बौद्धिक संपदा अधिकार",
+    desc: "Trademark registration, patent filing & enforcement, copyright protection.",
+    color: "from-purple-500/10 to-transparent",
+  },
+  {
+    icon: Heart,
+    title: "Family & Personal Law",
+    hindi: "पारिवारिक एवं व्यक्तिगत कानून",
+    desc: "Divorce, custody, alimony, succession & wills, domestic violence cases.",
+    color: "from-rose-500/10 to-transparent",
+  },
+  {
+    icon: TrendingUp,
+    title: "Taxation & Financial Law",
+    hindi: "कर एवं वित्तीय कानून",
+    desc: "GST, Income Tax compliance, tax structuring & litigation.",
+    color: "from-green-500/10 to-transparent",
+  },
+  {
+    icon: Cpu,
+    title: "Cyber Law & Emerging Areas",
+    hindi: "साइबर कानून एवं उभरते क्षेत्र",
+    desc: "Data privacy, environmental law, consumer protection, arbitration & mediation.",
+    color: "from-cyan-500/10 to-transparent",
+  },
+];
+
+const testimonials = [
+  {
+    name: "Amit Verma",
+    role: "Business Owner, Delhi",
+    text: "Adv. Rahul Sharma handled our company's corporate dispute with exceptional skill. His strategic approach saved us months of litigation. Highly recommended!",
+    rating: 5,
+  },
+  {
+    name: "Sunita Kapoor",
+    role: "Property Dispute Client",
+    text: "After years of struggling with our property case, Rahul ji resolved it in just 8 months. His expertise in civil litigation is unmatched.",
+    rating: 5,
+  },
+  {
+    name: "Ravi Shankar",
+    role: "Criminal Case Client",
+    text: "Got bail within 48 hours of engaging Adv. Sharma. His knowledge of BNS and criminal procedure is phenomenal. A true legal expert.",
+    rating: 5,
+  },
+];
+
+const blogPosts = [
+  {
+    title: "Understanding BNS 2023: Key Changes from IPC",
+    hindi: "बीएनएस 2023: आईपीसी से प्रमुख बदलाव",
+    date: "Sep 15, 2026",
+    category: "Criminal Law",
+    excerpt:
+      "The Bharatiya Nyaya Sanhita 2023 has replaced the IPC. Here are the critical changes every citizen must know.",
+  },
+  {
+    title: "GST Compliance for Small Businesses",
+    hindi: "छोटे व्यवसायों के लिए जीएसटी अनुपालन",
+    date: "Sep 8, 2026",
+    category: "Tax Law",
+    excerpt:
+      "A practical guide to GST registration, filing deadlines, and avoiding common compliance pitfalls.",
+  },
+  {
+    title: "How to Register a Trademark in India",
+    hindi: "भारत में ट्रेडमार्क पंजीकरण कैसे करें",
+    date: "Sep 1, 2026",
+    category: "IPR",
+    excerpt:
+      "Step-by-step process for trademark registration, from filing to approval. Protect your brand today.",
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* ===== HERO SECTION ===== */}
+      <section className="hero-section">
+        {/* Background */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero-bg.jpg"
+            alt="Legal Background"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Gold accent lines */}
+        <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-transparent via-[#D4AF37]/40 to-transparent" />
+
+        <div className="container-custom relative z-10 pt-32 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left: Content */}
+          <div>
+            <div className="badge mb-6">
+              न्याय आपका अधिकार है · Justice is Your Right
+            </div>
+            <h1 className="font-serif text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
+              Your Trusted{" "}
+              <span className="text-gradient">Legal Partner</span>
+              <br />
+              <span className="text-4xl lg:text-5xl text-white/80">
+                — आपका विश्वसनीय अधिवक्ता
+              </span>
+            </h1>
+            <p className="text-white/70 text-lg mb-3 leading-relaxed max-w-xl">
+              With over 15 years of courtroom excellence, Adv. Rahul Sharma
+              provides comprehensive legal representation across all practice
+              areas — from civil disputes to corporate law.
+            </p>
+            <p className="text-[#D4AF37]/70 text-sm mb-10 italic font-serif">
+              "15 वर्षों के अनुभव के साथ, हम आपके हर कानूनी मामले में
+              साथ हैं।"
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/contact" className="btn-gold">
+                Book Consultation <Calendar size={18} />
+              </Link>
+              <Link href="/services" className="btn-outline">
+                Our Services <ArrowRight size={18} />
+              </Link>
+            </div>
+
+            {/* Quick contact bar */}
+            <div className="mt-10 flex items-center gap-6">
+              <a
+                href="tel:+919999999999"
+                className="flex items-center gap-2 text-white/60 hover:text-[#D4AF37] transition-colors"
+              >
+                <Phone size={16} className="text-[#D4AF37]" />
+                <span className="text-sm font-display">+91 99999 99999</span>
+              </a>
+              <span className="w-px h-4 bg-white/20" />
+              <span className="text-white/40 text-xs">
+                Mon–Sat · 9AM to 7PM
+              </span>
+            </div>
+          </div>
+
+          {/* Right: Info Cards */}
+          <div className="hidden lg:flex flex-col gap-4 items-end">
+            {/* Advocate Card */}
+            <div className="glass-card p-5 w-72 flex items-center gap-4">
+              <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-[#D4AF37] shrink-0">
+                <Image
+                  src="/advocate.jpg"
+                  alt="Adv. Rahul Sharma"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+              <div>
+                <p className="text-white font-serif font-bold">
+                  Adv. Rahul Sharma
+                </p>
+                <p className="text-[#D4AF37] text-xs font-display tracking-wide">
+                  LLB, LLM · Bar Council of India
+                </p>
+                <div className="flex gap-0.5 mt-1">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <Star
+                      key={s}
+                      size={10}
+                      className="fill-[#D4AF37] text-[#D4AF37]"
+                    />
+                  ))}
+                  <span className="text-white/40 text-xs ml-1">5.0</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Trust card */}
+            <div className="glass-card p-5 w-64">
+              <div className="w-10 h-10 rounded-full bg-[#D4AF37]/20 flex items-center justify-center mb-3">
+                <Shield size={20} className="text-[#D4AF37]" />
+              </div>
+              <h3 className="font-serif text-lg text-white mb-1">
+                Confidential & Trusted
+              </h3>
+              <p className="text-white/50 text-xs">
+                Attorney-client privilege guaranteed. Your matters stay private.
+              </p>
+            </div>
+
+            {/* Award card */}
+            <div className="glass-card p-5 w-64 -mr-8">
+              <div className="w-10 h-10 rounded-full bg-[#D4AF37]/20 flex items-center justify-center mb-3">
+                <Award size={20} className="text-[#D4AF37]" />
+              </div>
+              <h3 className="font-serif text-lg text-white mb-1">
+                Award-Winning Practice
+              </h3>
+              <p className="text-white/50 text-xs">
+                Recognized by Delhi Bar Association for excellence in litigation.
+              </p>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+          <div className="w-px h-16 bg-gradient-to-b from-[#D4AF37] to-transparent" />
+          <span className="text-[#D4AF37]/60 text-xs font-display tracking-widest">
+            SCROLL
+          </span>
+        </div>
+      </section>
+
+      {/* ===== STATS SECTION ===== */}
+      <section className="py-16 border-y border-[#D4AF37]/15 bg-[#050505]">
+        <div className="container-custom">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat) => (
+              <div key={stat.number} className="text-center">
+                <div className="stat-number mb-1">{stat.number}</div>
+                <div className="text-white/80 font-display text-sm font-600 tracking-wide">
+                  {stat.label}
+                </div>
+                <div className="text-[#D4AF37]/50 text-xs mt-1">
+                  {stat.sublabel}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== PRACTICE AREAS ===== */}
+      <section id="services" className="py-24 bg-[#0a0a0a]">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <div className="section-label mb-3">Practice Areas · सेवाएं</div>
+            <h2 className="section-title mb-4">
+              Comprehensive <span>Legal Services</span>
+            </h2>
+            <p className="text-white/50 max-w-xl mx-auto">
+              From civil litigation to cutting-edge cyber law, we cover every
+              domain of Indian jurisprudence.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {practiceAreas.map((area) => (
+              <Link
+                href="/services"
+                key={area.title}
+                className="glass-card p-7 group cursor-pointer block"
+              >
+                <div
+                  className={`absolute inset-0 rounded-lg bg-gradient-to-br ${area.color} opacity-0 group-hover:opacity-100 transition-opacity`}
+                />
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center mb-5 group-hover:bg-[#D4AF37]/20 transition-colors">
+                    <area.icon size={22} className="text-[#D4AF37]" />
+                  </div>
+                  <h3 className="font-serif text-xl text-white mb-1 group-hover:text-[#D4AF37] transition-colors">
+                    {area.title}
+                  </h3>
+                  <p className="text-[#D4AF37]/60 text-xs font-display tracking-wide mb-3">
+                    {area.hindi}
+                  </p>
+                  <p className="text-white/50 text-sm leading-relaxed">
+                    {area.desc}
+                  </p>
+                  <div className="flex items-center gap-1 mt-4 text-[#D4AF37]/60 group-hover:text-[#D4AF37] transition-colors text-xs font-display font-600 uppercase tracking-wider">
+                    Learn More <ArrowRight size={12} />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/services" className="btn-gold">
+              View All Practice Areas <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== ABOUT SECTION ===== */}
+      <section className="py-24 bg-[#050505]">
+        <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Image */}
+          <div className="relative">
+            <div className="relative rounded-lg overflow-hidden border-[3px] border-[#D4AF37]/40 shadow-2xl">
+              <Image
+                src="/advocate.jpg"
+                alt="Adv. Rahul Sharma"
+                width={600}
+                height={700}
+                className="w-full h-[500px] object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            </div>
+            {/* Floating badge */}
+            <div className="absolute -bottom-6 -right-6 bg-[#D4AF37] text-black p-5 rounded-lg shadow-xl">
+              <div className="font-serif font-bold text-3xl leading-none">
+                15+
+              </div>
+              <div className="text-xs font-display font-700 tracking-wide mt-1">
+                Years of Excellence
+              </div>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div>
+            <div className="section-label mb-3">About the Advocate · परिचय</div>
+            <h2 className="section-title mb-5">
+              A Legacy of <span>Justice</span>
+              <br />& Integrity
+            </h2>
+            <div className="gold-divider mb-6" />
+            <p className="text-white/60 mb-4 leading-relaxed">
+              Adv. Rahul Sharma is a distinguished advocate with over 15 years
+              of practice before the High Courts and District Courts of India.
+              Holding an LLB and LLM, he has built a reputation for meticulous
+              preparation, strategic litigation, and unwavering ethical
+              standards.
+            </p>
+            <p className="text-[#D4AF37]/70 italic font-serif mb-6">
+              "राहुल शर्मा अधिवक्ता — न्याय के प्रति अटूट समर्पण के साथ हर
+              मुवक्किल की आवाज।"
+            </p>
+            <ul className="space-y-3 mb-8">
+              {[
+                "LLB & LLM from University of Delhi",
+                "Member, Bar Council of Delhi",
+                "15+ years High Court & District Court practice",
+                "Specialization in Civil, Criminal & Corporate Law",
+                "PIL & constitutional matters before Supreme Court",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle
+                    size={18}
+                    className="text-[#D4AF37] shrink-0 mt-0.5"
+                  />
+                  <span className="text-white/60 text-sm">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <Link href="/about" className="btn-gold">
+              Full Profile <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== CLIENT PORTAL CTA ===== */}
+      <section className="py-20 bg-[#0a0a0a] border-y border-[#D4AF37]/10">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: FileText,
+                title: "Track Your Case",
+                hindi: "अपना मामला ट्रैक करें",
+                desc: "Real-time case status updates, hearing dates, and court orders.",
+                href: "/portal",
+                action: "Open Portal",
+              },
+              {
+                icon: Calendar,
+                title: "Book Consultation",
+                hindi: "परामर्श बुक करें",
+                desc: "Schedule an in-person or video consultation at your convenience.",
+                href: "/contact",
+                action: "Book Now",
+              },
+              {
+                icon: Users,
+                title: "Client Support",
+                hindi: "मुवक्किल सहायता",
+                desc: "24/7 WhatsApp support for urgent legal queries and updates.",
+                href: "https://wa.me/919999999999",
+                action: "Chat Now",
+              },
+            ].map((item) => (
+              <Link
+                key={item.title}
+                href={item.href}
+                className="glass-card p-8 text-center group block"
+              >
+                <div className="w-14 h-14 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center mx-auto mb-5 group-hover:bg-[#D4AF37]/20 transition-colors">
+                  <item.icon size={24} className="text-[#D4AF37]" />
+                </div>
+                <h3 className="font-serif text-xl text-white mb-1">
+                  {item.title}
+                </h3>
+                <p className="text-[#D4AF37]/50 text-xs font-display mb-3">
+                  {item.hindi}
+                </p>
+                <p className="text-white/50 text-sm mb-5">{item.desc}</p>
+                <span className="btn-outline text-xs py-2 px-5">
+                  {item.action}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== TESTIMONIALS ===== */}
+      <section className="py-24 bg-[#050505]">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <div className="section-label mb-3">
+              Client Testimonials · मुवक्किलों के अनुभव
+            </div>
+            <h2 className="section-title">
+              What Our <span>Clients Say</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((t) => (
+              <div key={t.name} className="testimonial-card relative">
+                <div className="flex gap-1 mb-4">
+                  {Array.from({ length: t.rating }).map((_, i) => (
+                    <Star
+                      key={i}
+                      size={14}
+                      className="fill-[#D4AF37] text-[#D4AF37]"
+                    />
+                  ))}
+                </div>
+                <p className="text-white/70 text-sm leading-relaxed mb-6 italic">
+                  {t.text}
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#D4AF37]/20 flex items-center justify-center font-serif font-bold text-[#D4AF37]">
+                    {t.name[0]}
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold text-sm">{t.name}</p>
+                    <p className="text-white/40 text-xs">{t.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== BLOG PREVIEW ===== */}
+      <section className="py-24 bg-[#0a0a0a]">
+        <div className="container-custom">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+              <div className="section-label mb-3">Legal Insights · कानूनी जानकारी</div>
+              <h2 className="section-title">
+                Latest <span>Articles</span>
+              </h2>
+            </div>
+            <Link href="/blog" className="btn-outline text-sm py-2 px-5">
+              All Articles <ArrowRight size={16} />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {blogPosts.map((post) => (
+              <Link
+                href="/blog"
+                key={post.title}
+                className="blog-card group block"
+              >
+                <div className="h-40 bg-gradient-to-br from-[#D4AF37]/10 to-black/30 flex items-center justify-center">
+                  <BookOpen
+                    size={48}
+                    className="text-[#D4AF37]/30 group-hover:text-[#D4AF37]/50 transition-colors"
+                  />
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="badge text-[0.65rem] py-0.5 px-2">
+                      {post.category}
+                    </span>
+                    <span className="text-white/30 text-xs">{post.date}</span>
+                  </div>
+                  <h3 className="font-serif text-lg text-white mb-1 group-hover:text-[#D4AF37] transition-colors leading-tight">
+                    {post.title}
+                  </h3>
+                  <p className="text-[#D4AF37]/50 text-xs font-display mb-3">
+                    {post.hindi}
+                  </p>
+                  <p className="text-white/50 text-sm leading-relaxed line-clamp-2">
+                    {post.excerpt}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== FINAL CTA ===== */}
+      <section className="py-24 bg-[#050505] border-t border-[#D4AF37]/10">
+        <div className="container-custom text-center">
+          <div className="max-w-2xl mx-auto">
+            <div className="w-16 h-16 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center mx-auto mb-6 animate-float">
+              <Scale size={28} className="text-[#D4AF37]" />
+            </div>
+            <h2 className="section-title mb-4">
+              Ready to <span>Defend Your Rights?</span>
+            </h2>
+            <p className="text-white/50 mb-4">
+              Your first consultation is free. We listen, we advise, we fight.
+            </p>
+            <p className="text-[#D4AF37]/60 font-serif italic mb-8">
+              "पहली परामर्श निःशुल्क। हम सुनते हैं, सलाह देते हैं, लड़ते
+              हैं।"
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link href="/contact" className="btn-gold">
+                Free Consultation <Calendar size={18} />
+              </Link>
+              <a href="tel:+919999999999" className="btn-outline">
+                Call Now <Phone size={18} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
