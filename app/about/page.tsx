@@ -11,6 +11,7 @@ import {
   Shield,
   Cpu,
   Star,
+  GraduationCap,
 } from "lucide-react";
 
 const advocates = [
@@ -59,7 +60,7 @@ const advocates = [
       "Corporate Compliance & Audits",
       "Mentorship, Training & Quality Inspection",
     ],
-    bio: "Adv. Madan Kumar Upadhyay is uniquely positioned with 20 years of cumulative experience spanning legal practice alongside expertise in Administration, Technical Operations, Aeronautics, Logistics, Mentoring, Quality Inspection, and Auditing — making him an indispensable multi-domain counsel for complex, cross-sector cases.",
+    bio: "Adv. Madan Kumar Upadhyay is an alumnus of the University of Allahabad — one of India's premier institutions — uniquely positioned with 20 years of cumulative experience spanning legal practice alongside expertise in Administration, Technical Operations, Aeronautics, Logistics, Mentoring, Quality Inspection, and Auditing — making him an indispensable multi-domain counsel for complex, cross-sector cases.",
     icon: Briefcase,
     featured: true,
   },
@@ -201,6 +202,7 @@ export default function AboutPage() {
                   { icon: Briefcase, label: "Administration" },
                   { icon: Shield, label: "Aeronautics & Logistics" },
                   { icon: Award, label: "Quality & Audit" },
+                  { icon: GraduationCap, label: "Univ. of Allahabad" },
                 ].map((a) => (
                   <div key={a.label} className="glass-card p-4 text-center">
                     <a.icon
@@ -226,8 +228,12 @@ export default function AboutPage() {
               <div className="gold-divider mb-6" />
 
               <p className="text-white/60 leading-relaxed mb-5">
-                Adv. Madan Kumar Upadhyay is a rare legal professional who
-                combines traditional legal advocacy with 20 years of
+                Adv. Madan Kumar Upadhyay is a rare legal professional and an
+                alumnus of the prestigious{" "}
+                <span className="text-[#D4AF37] font-medium">
+                  University of Allahabad
+                </span>
+                . He combines traditional legal advocacy with 20 years of
                 cross-domain expertise. His unique background spans not just
                 courtroom practice but also Administration, Technical
                 Operations, Aeronautics, Logistics, Mentoring, Quality
