@@ -1,12 +1,12 @@
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/919999999999?text=Hello%20Adv.%20Rahul%20Sharma%2C%20I%20need%20legal%20consultation."
+      href="https://wa.me/919305592322?text=Hello%20Chaubey%20%26%20Associates%2C%20I%20need%20legal%20consultation."
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-btn animate-pulse-gold"
       aria-label="Chat on WhatsApp"
-      title="WhatsApp Consultation"
+      title="WhatsApp Consultation — 9305592322"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

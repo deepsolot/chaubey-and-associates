@@ -38,13 +38,13 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col leading-tight">
             <span className="font-serif font-bold text-white text-lg leading-none">
-              Adv. Rahul Sharma
+              Chaubey &amp; Associates
             </span>
             <span
-              className="text-[0.6rem] font-display font-600 tracking-widest text-gold uppercase"
+              className="text-[0.6rem] font-display font-600 tracking-widest uppercase"
               style={{ color: "#D4AF37" }}
             >
-              Legal Counsel
+              Legal Counsel · दिल्ली · वाराणसी · कैमूर
             </span>
           </div>
         </Link>
@@ -91,6 +91,15 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          {/* Mobile contact bar */}
+          <div className="mt-4 pt-4 border-t border-[#D4AF37]/10">
+            <a
+              href="tel:+919305592322"
+              className="block text-[#D4AF37] text-sm font-display font-600"
+            >
+              📞 +91 93055 92322
+            </a>
+          </div>
         </div>
       )}
     </nav>

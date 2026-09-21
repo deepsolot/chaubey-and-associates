@@ -5,18 +5,19 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Adv. Rahul Sharma | Expert Legal Counsel — न्याय आपका अधिकार है",
+  title: "Chaubey & Associates | Expert Legal Panel — New Delhi · Varanasi · Kaimur",
   description:
-    "Premier legal services by Adv. Rahul Sharma — Civil & Criminal Litigation, Corporate Law, IPR, Family Law, Tax Law, and more. Serving clients across India with 15+ years of expertise.",
+    "Panel of expert advocates led by Adv. Manoj Kumar Chaubey (40 yrs experience). Civil, Criminal, Corporate, IPR, Family & Tax Law. Offices in New Delhi, Varanasi (UP) & Kaimur (Bihar). Call: 9305592322.",
   keywords:
-    "advocate, lawyer India, civil litigation, criminal lawyer, corporate law, IPR, family law, GST tax lawyer, cyber law, Rahul Sharma advocate",
+    "advocate Delhi, lawyer Varanasi, Manoj Kumar Chaubey, Madan Kumar advocate, civil litigation, criminal lawyer, corporate law, IPR, family law, Uttam Nagar advocate, Kaimur Bihar lawyer",
   openGraph: {
-    title: "Adv. Rahul Sharma | Expert Legal Counsel",
+    title: "Chaubey & Associates | Expert Legal Panel",
     description:
-      "Premier legal services across Civil, Criminal, Corporate, IPR, Family & Tax law.",
+      "40+ years of combined legal expertise. Civil, Criminal, Corporate, IPR, Family & Tax Law. New Delhi · Varanasi · Kaimur.",
     type: "website",
   },
 };
+
 
 export default function RootLayout({
   children,

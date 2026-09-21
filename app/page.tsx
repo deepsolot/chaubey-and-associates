@@ -20,10 +20,10 @@ import {
 } from "lucide-react";
 
 const stats = [
-  { number: "15+", label: "Years Experience", sublabel: "वर्ष अनुभव" },
+  { number: "100+", label: "Combined Years", sublabel: "संयुक्त अनुभव" },
   { number: "2,000+", label: "Cases Handled", sublabel: "मामले निपटाए" },
-  { number: "95%", label: "Success Rate", sublabel: "सफलता दर" },
-  { number: "500+", label: "Happy Clients", sublabel: "संतुष्ट मुवक्किल" },
+  { number: "4", label: "Expert Advocates", sublabel: "विशेषज्ञ अधिवक्ता" },
+  { number: "3", label: "Offices in India", sublabel: "भारत में कार्यालय" },
 ];
 
 const practiceAreas = [
@@ -73,21 +73,21 @@ const practiceAreas = [
 
 const testimonials = [
   {
-    name: "Amit Verma",
-    role: "Business Owner, Delhi",
-    text: "Adv. Rahul Sharma handled our company's corporate dispute with exceptional skill. His strategic approach saved us months of litigation. Highly recommended!",
+    name: "Ramesh Tiwari",
+    role: "Property Dispute, Delhi",
+    text: "Adv. Manoj Kumar Chaubey handled our property case with incredible expertise. After 3 years of struggle, he resolved it in 8 months. Forever grateful!",
     rating: 5,
   },
   {
-    name: "Sunita Kapoor",
-    role: "Property Dispute Client",
-    text: "After years of struggling with our property case, Rahul ji resolved it in just 8 months. His expertise in civil litigation is unmatched.",
+    name: "Priya Singh",
+    role: "Family Law Client, Varanasi",
+    text: "Chaubey & Associates guided me through a difficult divorce and custody matter with great compassion. Adv. Ashok Kumar Seth was always available and supportive.",
     rating: 5,
   },
   {
-    name: "Ravi Shankar",
-    role: "Criminal Case Client",
-    text: "Got bail within 48 hours of engaging Adv. Sharma. His knowledge of BNS and criminal procedure is phenomenal. A true legal expert.",
+    name: "Vikrant Pandey",
+    role: "Corporate Client, New Delhi",
+    text: "Adv. Madan Kumar Upadhyay's cross-domain expertise was exactly what our aerospace company needed. His understanding of both legal and technical aspects is unique.",
     rating: 5,
   },
 ];
@@ -147,21 +147,21 @@ export default function HomePage() {
               न्याय आपका अधिकार है · Justice is Your Right
             </div>
             <h1 className="font-serif text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
-              Your Trusted{" "}
-              <span className="text-gradient">Legal Partner</span>
+              Chaubey &amp;{" "}
+              <span className="text-gradient">Associates</span>
               <br />
               <span className="text-4xl lg:text-5xl text-white/80">
-                — आपका विश्वसनीय अधिवक्ता
+                — न्याय · सत्य · निष्ठा
               </span>
             </h1>
             <p className="text-white/70 text-lg mb-3 leading-relaxed max-w-xl">
-              With over 15 years of courtroom excellence, Adv. Rahul Sharma
-              provides comprehensive legal representation across all practice
-              areas — from civil disputes to corporate law.
+              A panel of four distinguished advocates with 100+ combined years
+              of experience — Adv. Manoj Kumar Chaubey, Adv. Ashok Kumar Seth,
+              Adv. Madan Kumar Upadhyay &amp; Adv. Nand Jee Kumar Upadhyay.
             </p>
             <p className="text-[#D4AF37]/70 text-sm mb-10 italic font-serif">
-              "15 वर्षों के अनुभव के साथ, हम आपके हर कानूनी मामले में
-              साथ हैं।"
+              &quot;100+ वर्षों के संयुक्त अनुभव के साथ, हम आपके हर कानूनी
+              मामले में साथ हैं — दिल्ली, वाराणसी एवं कैमूर।&quot;
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-gold">
@@ -175,11 +175,11 @@ export default function HomePage() {
             {/* Quick contact bar */}
             <div className="mt-10 flex items-center gap-6">
               <a
-                href="tel:+919999999999"
+                href="tel:+919305592322"
                 className="flex items-center gap-2 text-white/60 hover:text-[#D4AF37] transition-colors"
               >
                 <Phone size={16} className="text-[#D4AF37]" />
-                <span className="text-sm font-display">+91 99999 99999</span>
+                <span className="text-sm font-display">+91 93055 92322</span>
               </a>
               <span className="w-px h-4 bg-white/20" />
               <span className="text-white/40 text-xs">
@@ -190,22 +190,22 @@ export default function HomePage() {
 
           {/* Right: Info Cards */}
           <div className="hidden lg:flex flex-col gap-4 items-end">
-            {/* Advocate Card */}
+            {/* Madan Kumar Upadhyay Card */}
             <div className="glass-card p-5 w-72 flex items-center gap-4">
               <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-[#D4AF37] shrink-0">
                 <Image
-                  src="/advocate.jpg"
-                  alt="Adv. Rahul Sharma"
+                  src="/madan-upadhyay.jpg"
+                  alt="Adv. Madan Kumar Upadhyay"
                   fill
                   className="object-cover object-top"
                 />
               </div>
               <div>
-                <p className="text-white font-serif font-bold">
-                  Adv. Rahul Sharma
+                <p className="text-white font-serif font-bold text-sm">
+                  Adv. Madan Kumar Upadhyay
                 </p>
                 <p className="text-[#D4AF37] text-xs font-display tracking-wide">
-                  LLB, LLM · Bar Council of India
+                  Multi-Domain Counsel · 20 Yrs
                 </p>
                 <div className="flex gap-0.5 mt-1">
                   {[1, 2, 3, 4, 5].map((s) => (
@@ -337,7 +337,7 @@ export default function HomePage() {
             <div className="relative rounded-lg overflow-hidden border-[3px] border-[#D4AF37]/40 shadow-2xl">
               <Image
                 src="/advocate.jpg"
-                alt="Adv. Rahul Sharma"
+                alt="Adv. Manoj Kumar Chaubey"
                 width={600}
                 height={700}
                 className="w-full h-[500px] object-cover object-top"
@@ -347,31 +347,30 @@ export default function HomePage() {
             {/* Floating badge */}
             <div className="absolute -bottom-6 -right-6 bg-[#D4AF37] text-black p-5 rounded-lg shadow-xl">
               <div className="font-serif font-bold text-3xl leading-none">
-                15+
+                100+
               </div>
               <div className="text-xs font-display font-700 tracking-wide mt-1">
-                Years of Excellence
+                Combined Years
               </div>
             </div>
           </div>
 
           {/* Content */}
           <div>
-            <div className="section-label mb-3">About the Advocate · परिचय</div>
+            <div className="section-label mb-3">About the Advocates · परिचय</div>
             <h2 className="section-title mb-5">
               A Legacy of <span>Justice</span>
               <br />& Integrity
             </h2>
             <div className="gold-divider mb-6" />
             <p className="text-white/60 mb-4 leading-relaxed">
-              Adv. Rahul Sharma is a distinguished advocate with over 15 years
-              of practice before the High Courts and District Courts of India.
-              Holding an LLB and LLM, he has built a reputation for meticulous
-              preparation, strategic litigation, and unwavering ethical
-              standards.
+              Led by Adv. Manoj Kumar Chaubey (40 years), our panel also
+              features Adv. Ashok Kumar Seth (30 years), Adv. Madan Kumar
+              Upadhyay (20 years, multi-domain expert), and Adv. Nand Jee Kumar
+              Upadhyay (10 years). Together, they cover every major area of
+              Indian law across three offices.
             </p>
             <p className="text-[#D4AF37]/70 italic font-serif mb-6">
-              "राहुल शर्मा अधिवक्ता — न्याय के प्रति अटूट समर्पण के साथ हर
               मुवक्किल की आवाज।"
             </p>
             <ul className="space-y-3 mb-8">
@@ -424,7 +423,7 @@ export default function HomePage() {
                 title: "Client Support",
                 hindi: "मुवक्किल सहायता",
                 desc: "24/7 WhatsApp support for urgent legal queries and updates.",
-                href: "https://wa.me/919999999999",
+                href: "https://wa.me/919305592322",
                 action: "Chat Now",
               },
             ].map((item) => (
@@ -566,7 +565,7 @@ export default function HomePage() {
               <Link href="/contact" className="btn-gold">
                 Free Consultation <Calendar size={18} />
               </Link>
-              <a href="tel:+919999999999" className="btn-outline">
+              <a href="tel:+919305592322" className="btn-outline">
                 Call Now <Phone size={18} />
               </a>
             </div>
