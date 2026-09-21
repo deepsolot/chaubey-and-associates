@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const services = [
-  "Civil & Criminal Litigation",
-  "Corporate & Business Law",
-  "Intellectual Property Rights",
-  "Family & Personal Law",
-  "Taxation & Financial Law",
-  "Cyber Law & Arbitration",
+  { label: "Civil & Criminal Litigation", href: "/services#litigation" },
+  { label: "Corporate & Business Law", href: "/services#corporate" },
+  { label: "Intellectual Property Rights", href: "/services#ipr" },
+  { label: "Family & Personal Law", href: "/services#family" },
+  { label: "Taxation & Financial Law", href: "/services#tax" },
+  { label: "Cyber Law & Arbitration", href: "/services#emerging" },
 ];
 
 const quickLinks = [
@@ -146,12 +146,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {services.map((s) => (
-                <li key={s}>
+                <li key={s.label}>
                   <Link
-                    href="/services"
+                    href={s.href}
                     className="text-white/50 hover:text-[#D4AF37] text-sm transition-colors"
                   >
-                    {s}
+                    {s.label}
                   </Link>
                 </li>
               ))}
