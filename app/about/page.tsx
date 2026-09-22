@@ -17,6 +17,7 @@ import {
 const advocates = [
   {
     name: "Adv. Manoj Kumar Chaubey",
+    slug: "manoj-kumar-chaubey",
     role: "Senior Partner & Litigation Counsel",
     hindi: "वरिष्ठ अधिवक्ता एवं प्रमुख परामर्शदाता",
     experience: "40",
@@ -33,6 +34,7 @@ const advocates = [
   },
   {
     name: "Adv. Ashok Kumar Seth",
+    slug: "ashok-kumar-seth",
     role: "Senior Counsel",
     hindi: "वरिष्ठ अधिवक्ता",
     experience: "30",
@@ -49,6 +51,7 @@ const advocates = [
   },
   {
     name: "Adv. Madan Kumar Upadhyay",
+    slug: "madan-kumar-upadhyay",
     role: "Lead Multi-Domain Counsel",
     hindi: "प्रमुख बहु-क्षेत्र अधिवक्ता",
     experience: "20",
@@ -66,6 +69,7 @@ const advocates = [
   },
   {
     name: "Adv. Nand Jee Kumar Upadhyay",
+    slug: "nand-jee-kumar-upadhyay",
     role: "Corporate & Cyber Law Counsel",
     hindi: "सहयोगी अधिवक्ता (कॉर्पोरेट एवं साइबर लॉ)",
     experience: "10",
@@ -294,9 +298,10 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {advocates.map((adv) => (
-              <div
+              <Link
                 key={adv.name}
-                className={`glass-card p-7 ${adv.featured ? "border-[#D4AF37]/50 shadow-lg shadow-[#D4AF37]/5" : ""}`}
+                href={`/about/${adv.slug}`}
+                className={`glass-card p-7 block group hover:border-[#D4AF37]/60 transition-all duration-300 ${adv.featured ? "border-[#D4AF37]/50 shadow-lg shadow-[#D4AF37]/5" : ""}`}
               >
                 <div className="flex items-start gap-5 mb-5">
                   {/* Photo or icon */}
@@ -361,7 +366,11 @@ export default function AboutPage() {
                     ))}
                   </ul>
                 </div>
-              </div>
+
+                <div className="mt-5 flex items-center gap-2 text-[#D4AF37]/60 group-hover:text-[#D4AF37] transition-colors text-xs font-display tracking-wide">
+                  View Full Profile <ArrowRight size={14} />
+                </div>
+              </Link>
             ))}
           </div>
         </div>
