@@ -86,33 +86,6 @@ const advocates = [
   },
 ];
 
-const milestones = [
-  {
-    year: "1985",
-    event: "Panel founded by Adv. Manoj Kumar Chaubey in Varanasi",
-  },
-  {
-    year: "1995",
-    event: "Adv. Ashok Kumar Seth joins; Bihar practice expanded",
-  },
-  {
-    year: "2004",
-    event: "New Delhi chamber opened at Mohan Garden, Uttam Nagar",
-  },
-  {
-    year: "2006",
-    event: "Adv. Madan Kumar Upadhyay joins with multi-domain expertise",
-  },
-  {
-    year: "2016",
-    event: "Adv. Nand Jee Kumar Upadhyay joins; IPR & Cyber Law added",
-  },
-  {
-    year: "2024",
-    event:
-      "Panel expanded to 3 offices — Delhi, Varanasi & Kaimur; 2,000+ cases served",
-  },
-];
 
 export default function AboutPage() {
   return (
@@ -376,39 +349,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-24 bg-[#0a0a0a]">
-        <div className="container-custom max-w-3xl mx-auto">
-          <div className="text-center mb-14">
-            <div className="section-label mb-3">Our Journey · हमारी यात्रा</div>
-            <h2 className="section-title">
-              40 Years of <span>Legal Excellence</span>
-            </h2>
-          </div>
-          <div className="space-y-0">
-            {milestones.map((m, i) => (
-              <div key={m.year} className="flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 rounded-full bg-[#D4AF37]/15 border-2 border-[#D4AF37]/40 flex items-center justify-center shrink-0">
-                    <span className="text-[#D4AF37] text-xs font-display font-700">
-                      {m.year.slice(2)}
-                    </span>
-                  </div>
-                  {i < milestones.length - 1 && (
-                    <div className="w-px flex-1 bg-[#D4AF37]/15 mt-1 mb-1 min-h-[32px]" />
-                  )}
-                </div>
-                <div className="pb-7">
-                  <p className="text-[#D4AF37] font-display font-700 text-sm tracking-wider">
-                    {m.year}
-                  </p>
-                  <p className="text-white/65 text-sm">{m.event}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-20 bg-[#050505] border-t border-[#D4AF37]/10 text-center">
