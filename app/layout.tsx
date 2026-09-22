@@ -53,21 +53,6 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        {/* Hide Netlify "Powered by" badge */}
-        <style>{`
-          [data-netlify-widget],
-          .netlify-identity-widget,
-          #netlify-modal,
-          iframe[src*="netlify.com"],
-          a[href*="netlify.com"][style*="fixed"],
-          div[style*="netlify"],
-          #__netlify-identity-widget {
-            display: none !important;
-            visibility: hidden !important;
-            opacity: 0 !important;
-            pointer-events: none !important;
-          }
-        `}</style>
       </head>
       <body>
         <Navbar />
