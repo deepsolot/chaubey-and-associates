@@ -8,7 +8,7 @@
 - **Firm Name:** **MK Associates** (also known as Chaubey & Associates)
 - **Tagline / Motto:** न्याय · सत्य · निष्ठा (Justice · Truth · Dedication)
 - **Subtext:** Legal Counsel · दिल्ली · वाराणसी · कैमूर
-- **Official Emblem Logo:** `/public/logo.png` & `/app/icon.png` (Circular gold seal with scales of justice, wheat wreath, 3 stars, and Hindi ribbon).
+- **Official Emblem Logo & Favicon:** `/public/logo.png`, `/app/icon.png`, `/app/favicon.ico`, `/public/favicon.ico`, `/app/apple-icon.png` (Circular gold seal with scales of justice; replaces default Next.js/Vercel triangle).
 - **Custom Domain Status:** Active & Live with SSL on **Vercel** at [https://www.newzenadvocate.com](https://www.newzenadvocate.com) (DNS via Hostinger)
   - A Record (`@`): `76.76.21.21`
   - CNAME Record (`www`): `cname.vercel-dns.com`
