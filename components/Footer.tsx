@@ -74,7 +74,7 @@ export default function Footer() {
             <div className="flex gap-3">
               {[
                 {
-                  href: "#",
+                  href: "https://www.facebook.com/share/1YcniQ5Wjy/",
                   label: "Facebook",
                   svg: (
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
@@ -83,7 +83,7 @@ export default function Footer() {
                   ),
                 },
                 {
-                  href: "#",
+                  href: "https://x.com/Maddyupdy",
                   label: "X (Twitter)",
                   svg: (
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
@@ -92,7 +92,7 @@ export default function Footer() {
                   ),
                 },
                 {
-                  href: "#",
+                  href: "https://www.linkedin.com",
                   label: "LinkedIn",
                   svg: (
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
@@ -114,6 +114,8 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37]/60 hover:border-[#D4AF37] hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all"
                 >
                   {svg}

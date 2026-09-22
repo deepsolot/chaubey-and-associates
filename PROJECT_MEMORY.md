@@ -94,6 +94,9 @@ All profile routes are statically generated at `/about/[slug]` via Next.js 16 as
 - **Alternate:** `+91 7200151400`
 - **Bihar Office:** `+91 9507892670`
 - **Official Email:** `maddydragon85@gmail.com`
+- **Adv. Madan Kumar Upadhyay Social Profiles:**
+  - Facebook: [https://www.facebook.com/share/1YcniQ5Wjy/](https://www.facebook.com/share/1YcniQ5Wjy/)
+  - X (Twitter): [https://x.com/Maddyupdy](https://x.com/Maddyupdy)
 
 ### 3 Physical Offices:
 1. **New Delhi (Main Office):**
