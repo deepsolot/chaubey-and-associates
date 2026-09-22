@@ -861,8 +861,13 @@ export function generateStaticParams() {
   return advocateProfiles.map((a) => ({ slug: a.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const adv = advocateProfiles.find((a) => a.slug === params.slug);
+interface Props {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const adv = advocateProfiles.find((a) => a.slug === slug);
   if (!adv) return { title: "Advocate Not Found" };
   return {
     title: `${adv.name} | MK & Associates`,
@@ -872,12 +877,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 
 /* ────────── Page Component ────────── */
 
-export default function AdvocateProfilePage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const adv = advocateProfiles.find((a) => a.slug === params.slug);
+export default async function AdvocateProfilePage({ params }: Props) {
+  const { slug } = await params;
+  const adv = advocateProfiles.find((a) => a.slug === slug);
   if (!adv) notFound();
 
   const iconMap: Record<string, typeof Scale> = {
