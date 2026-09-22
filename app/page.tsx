@@ -401,7 +401,7 @@ export default function HomePage() {
             <div className="gold-divider mb-6" />
             <p className="text-white/60 mb-4 leading-relaxed">
               Spearheaded by Adv. Madan Kumar Upadhyay (20 years, multi-domain expert &amp; Allahabad University alumnus)
-              and Adv. Nand Jee Kumar Upadhyay (10 years, Corporate &amp; Cyber Law), alongside seasoned veterans
+              and Adv. Nand Jee Kumar Upadhyay (10 years, Criminal, Family &amp; Revenue Litigation), alongside seasoned veterans
               Adv. Manoj Kumar Chaubey (40 years) and Adv. Ashok Kumar Seth (30 years).
               Together, our panel provides comprehensive legal counsel across Delhi, Varanasi, and Bihar.
             </p>

@@ -690,185 +690,113 @@ const advocateProfiles: AdvocateProfile[] = [
   {
     name: "Adv. Nand Jee Kumar Upadhyay",
     slug: "nand-jee-kumar-upadhyay",
-    role: "Corporate & Cyber Law Counsel",
-    hindi: "सहयोगी अधिवक्ता (कॉर्पोरेट एवं साइबर लॉ)",
+    role: "Criminal, Family & Revenue Counsel",
+    hindi: "अधिवक्ता (आपराधिक, पारिवारिक एवं राजस्व वाद)",
     experience: "10",
     unit: "Years",
     photo: "/nand-jee-upadhyay.jpg",
     specializations: [
-      "Corporate & Business Law",
-      "Intellectual Property Rights",
-      "Taxation & GST Advisory",
-      "Cyber Law & Data Privacy",
+      "Criminal Law · Bail & Bond",
+      "Family Court Litigation",
+      "Revenue Court Litigation",
+      "Mutation Cases & Appeals",
     ],
-    bio: "Adv. Nand Jee Kumar Upadhyay brings fresh, tech-forward legal expertise in corporate law, IPR, taxation, and the rapidly evolving field of cyber law — ensuring the panel stays ahead of India's most dynamic legal frontiers.",
+    bio: "Adv. Nand Jee Kumar Upadhyay brings 10 years of courtroom litigation experience with specialised expertise in Criminal Law (anticipatory & regular bail, bonds, trial defense), Family Court litigation (matrimonial, maintenance, domestic violence), Revenue Court proceedings, and land mutation (दाखिल-खारिज) cases and appeals.",
     quote: {
-      text: "आधुनिक कानून और तकनीक का मिलन — यही भविष्य है।",
+      text: "न्याय की रक्षा और मुवक्किल के अधिकारों की सुरक्षा ही हमारा संकल्प है।",
       translation:
-        "The convergence of modern law and technology — that is the future.",
+        "Defending justice and protecting client rights is our steadfast commitment.",
     },
     practiceAreas: [
       {
-        title: "Trial Court Criminal Practice",
-        titleHi: "ट्रायल कोर्ट आपराधिक प्रैक्टिस",
+        title: "Criminal Law · Bail & Bond",
+        titleHi: "आपराधिक कानून · जमानत एवं मुचलका",
         items: [
           {
-            label: "FIR/Complaint Drafting",
-            desc: "Police station में FIR या Magistrate के सामने complaint दाखिल करना",
+            label: "Anticipatory Bail & Regular Bail",
+            desc: "Sessions Court और High Court में अग्रिम एवं नियमित जमानत याचिकाएं",
           },
           {
-            label: "Anticipatory Bail / Regular Bail",
-            desc: "Sessions Court में bail applications",
+            label: "Bail Bond & Surety Verification",
+            desc: "जमानत आदेश के बाद bond execution, surety verification व release orders की कार्यवाही",
           },
           {
-            label: "Remand Proceedings",
-            desc: "Police remand vs. judicial custody arguments",
+            label: "FIR & Police Complaint Drafting",
+            desc: "Police station में FIR दर्ज कराना या Magistrate के समक्ष Section 156(3) complaint दाखिल करना",
           },
           {
-            label: "Charge‑Sheet Scrutiny",
-            desc: "Investigating agency की report को legally challenge करना",
+            label: "Trial Court Criminal Defense",
+            desc: "Chargesheet scrutiny, framing of charges, discharge applications, witness cross-examination",
           },
           {
-            label: "Framing of Charges",
-            desc: "IPC/BNS sections के तहत charges तय कराना या oppose करना",
-          },
-          {
-            label: "Evidence Handling",
-            desc: "Witness examination, cross‑examination, documentary evidence",
-          },
-          {
-            label: "Arguments on Charge & Discharge",
-            desc: "Prima facie case न होने पर discharge application",
-          },
-          {
-            label: "Final Arguments",
-            desc: "Prosecution vs. Defence submissions before Magistrate/Sessions Judge",
+            label: "Appeals & Criminal Revisions",
+            desc: "Sessions Judge व High Court में criminal appeals, revision petitions एवं sentence suspension",
           },
         ],
       },
       {
-        title: "Appellate Criminal Practice",
-        titleHi: "अपीलीय आपराधिक प्रैक्टिस",
+        title: "Family Court Litigation",
+        titleHi: "पारिवारिक न्यायालय वाद",
         items: [
           {
-            label: "Appeals",
-            desc: "Sessions Court में Magistrate के judgment के खिलाफ appeal",
-          },
-          {
-            label: "Revisions",
-            desc: "Sessions Judge के पास Magistrate orders की legality/propriety पर revision",
-          },
-          {
-            label: "Suspension of Sentence",
-            desc: "Conviction के बाद sentence stay application",
-          },
-        ],
-      },
-      {
-        title: "Special Criminal Proceedings",
-        titleHi: "विशेष आपराधिक कार्यवाही",
-        items: [
-          {
-            label: "Maintenance under CrPC/BNSS Sec. 125",
-            desc: "Family disputes in criminal jurisdiction",
+            label: "Maintenance Proceedings (Sec. 125)",
+            desc: "CrPC / BNSS धारा 125 के तहत भरण-पोषण व अंतरिम राहत के मामले",
           },
           {
             label: "Domestic Violence Act Cases",
-            desc: "Magistrate court में complaint + relief applications",
+            desc: "घरेलू हिंसा अधिनियम के तहत संरक्षण आदेश, आवास एवं क्षतिपूर्ति के मामले",
           },
           {
-            label: "Juvenile Justice Board",
-            desc: "Juvenile accused के लिए representation",
+            label: "Matrimonial Disputes & Divorce",
+            desc: "Mutual consent divorce, contested divorce एवं दाम्पत्य अधिकारों की पुनर्स्थापना (RCR)",
           },
           {
-            label: "Special Acts",
-            desc: "NDPS, POCSO, SC/ST Act cases in Sessions Court",
-          },
-        ],
-      },
-      {
-        title: "Miscellaneous Criminal Practice",
-        titleHi: "विविध आपराधिक प्रैक्टिस",
-        items: [
-          {
-            label: "Surety Verification",
-            desc: "Bail sureties की scrutiny",
-          },
-          {
-            label: "Custody & Property Release",
-            desc: "Seized articles की release application",
+            label: "Child Custody & Visitation Rights",
+            desc: "नाबालिग बच्चों की कस्टडी, अभिभावकता (Guardianship) एवं मुलाक़ात अधिकारों के वाद",
           },
         ],
       },
       {
-        title: "Corporate & Business Law",
-        titleHi: "कॉर्पोरेट एवं व्यापार कानून",
+        title: "Revenue Court Litigation",
+        titleHi: "राजस्व न्यायालय वाद",
         items: [
           {
-            label: "Company Incorporation",
-            desc: "Startup registration, LLP formation, compliance setup",
+            label: "Revenue Court Practice",
+            desc: "Naib Tehsildar, Tehsildar, SDO/SDM, Collector/DM एवं Commissioner न्यायालयों में मुकदमों की पैरवी",
           },
           {
-            label: "Contract Drafting & Review",
-            desc: "NDAs, partnership deeds, shareholder agreements",
+            label: "Land & Agricultural Disputes",
+            desc: "कृषि व आवासीय भूमि विवाद, पैमाइश, हदबंदी (Demarcation), एवं कुर्रा-बंटवारा वाद",
           },
           {
-            label: "Corporate Governance",
-            desc: "Board resolutions, annual filings, ROC compliance",
+            label: "Correction of Revenue Records",
+            desc: "खतौनी, खसरा व जमाबंदी में नाम सुधार, अभिलेख दुरुस्ती (Correction of records)",
+          },
+          {
+            label: "Revenue Injunctions & Stay Orders",
+            desc: "राजस्व न्यायालयों से अवैध कब्ज़ा व बेदखली के विरुद्ध स्थगन आदेश (Stay order) हासिल करना",
           },
         ],
       },
       {
-        title: "Intellectual Property Rights",
-        titleHi: "बौद्धिक संपदा अधिकार",
+        title: "Mutation Cases & Appeals",
+        titleHi: "दाखिल-खारिज (नामांतरण) एवं अपील",
         items: [
           {
-            label: "Trademark Registration",
-            desc: "TM filing, opposition proceedings, renewal management",
+            label: "Property Mutation (दाखिल-खारिज)",
+            desc: "बैनामा (Sale deed), वसीयत (Will), दानपत्र (Gift deed) या वरासत (Inheritance) के आधार पर दाखिल-खारिज",
           },
           {
-            label: "Copyright Protection",
-            desc: "Software, content & artistic work copyright registration",
+            label: "Contested Mutation & Objections",
+            desc: "नामांतरण में आपत्ति (Objections) दाखिल करना, फर्जी वरासत व बेनामे को चुनौती देना",
           },
           {
-            label: "Patent Advisory",
-            desc: "Patent filing guidance, prior art search support",
-          },
-        ],
-      },
-      {
-        title: "Taxation & GST Advisory",
-        titleHi: "कराधान एवं GST परामर्श",
-        items: [
-          {
-            label: "GST Registration & Compliance",
-            desc: "New registration, return filing, input tax credit",
+            label: "Mutation Appeals",
+            desc: "Tehsildar के दाखिल-खारिज आदेश के विरुद्ध SDO / SDM व Collector कोर्ट में अपील",
           },
           {
-            label: "Tax Disputes & Appeals",
-            desc: "GST tribunal appeals, income tax appellate proceedings",
-          },
-          {
-            label: "Tax Planning",
-            desc: "Strategic tax structuring for businesses & individuals",
-          },
-        ],
-      },
-      {
-        title: "Cyber Law & Data Privacy",
-        titleHi: "साइबर कानून एवं डेटा गोपनीयता",
-        items: [
-          {
-            label: "Cyber Crime Complaints",
-            desc: "Online fraud, identity theft, harassment cases",
-          },
-          {
-            label: "Data Protection Advisory",
-            desc: "DPDP Act 2023 compliance, privacy policy drafting",
-          },
-          {
-            label: "IT Act Proceedings",
-            desc: "Section 66, 67, 43A proceedings & defense",
+            label: "Revision & Board of Revenue",
+            desc: "Commissioner कोर्ट एवं Board of Revenue (राजस्व परिषद) में रिवीजन याचिकाएं",
           },
         ],
       },

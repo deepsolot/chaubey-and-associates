@@ -27,7 +27,7 @@ Advocates are strictly ordered on the About page by descending seniority:
 | **1st** | **Adv. Manoj Kumar Chaubey** | Senior Partner & Litigation Counsel | **40 Yrs** | `/public/manoj-chaubey.jpg` | `/about/manoj-kumar-chaubey` |
 | **2nd** | **Adv. Ashok Kumar Seth** | Senior Counsel | **30 Yrs** | `/public/ashok-seth.png` | `/about/ashok-kumar-seth` |
 | **3rd** | **Adv. Madan Kumar Upadhyay** | Lead Multi-Domain Counsel | **20 Yrs** | `/public/madan-upadhyay.jpg` | `/about/madan-kumar-upadhyay` |
-| **4th** | **Adv. Nand Jee Kumar Upadhyay** | Corporate & Cyber Law Counsel | **10 Yrs** | `/public/nand-jee-upadhyay.jpg` | `/about/nand-jee-kumar-upadhyay` |
+| **4th** | **Adv. Nand Jee Kumar Upadhyay** | Criminal, Family & Revenue Counsel | **10 Yrs** | `/public/nand-jee-upadhyay.jpg` | `/about/nand-jee-kumar-upadhyay` |
 
 ### Photo & Profile Status:
 - **All 4 advocates have real, genuine photos installed** in `/public/`.
@@ -78,14 +78,11 @@ All profile routes are statically generated at `/about/[slug]` via Next.js 16 as
 - Aeronautical & Logistical Advisory (DGCA regulatory compliance, logistics/customs/warehousing disputes, technical operations & audits)
 
 ### D. Adv. Nand Jee Kumar Upadhyay (`/about/nand-jee-kumar-upadhyay`)
-- Trial Court Criminal Practice (FIR/complaint drafting, bail applications, remand arguments, charge-sheet scrutiny, charge framing, evidence, discharge)
-- Appellate Criminal Practice (Magistrate judgment appeals, revision petitions, suspension of sentence)
-- Special Criminal Proceedings (Sec. 125 maintenance, DV Act complaints, Juvenile Justice Board, NDPS/POCSO/SC-ST)
-- Miscellaneous Criminal Practice (Surety verification, custody & property release applications)
-- Corporate & Business Law (Company incorporation, contracts, corporate governance)
-- Intellectual Property Rights (Trademark registration, copyright, patent advisory)
-- Taxation & GST Advisory (GST registration & compliance, tax disputes/appeals, tax planning)
-- Cyber Law & Data Privacy (Online fraud, DPDP Act 2023 compliance, IT Act proceedings)
+- **Criminal Law · Bail & Bond** (Anticipatory Bail, Regular Bail, Bail Bond & Surety Verification, FIR & police complaint drafting, trial court defense, appeals & criminal revisions)
+- **Family Court Litigation** (Maintenance under Sec. 125 CrPC/BNSS, Domestic Violence Act cases, matrimonial disputes & divorce, child custody & visitation rights)
+- **Revenue Court Litigation** (Naib Tehsildar, Tehsildar, SDO/SDM, Collector/DM & Commissioner court practice, agricultural/land disputes, demarcation, partition, correction of revenue records, stay orders)
+- **Mutation Cases & Appeals** (Property mutation / दाखिल-खारिज based on sale deed/will/gift/inheritance, contested mutation objections, mutation appeals before SDO/DM, revision before Board of Revenue)
+- *(Note: Corporate, IPR, Tax/GST, and Cyber Law sections were completely removed as requested)*
 
 ---
 

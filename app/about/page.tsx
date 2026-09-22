@@ -73,19 +73,19 @@ const advocates = [
   {
     name: "Adv. Nand Jee Kumar Upadhyay",
     slug: "nand-jee-kumar-upadhyay",
-    role: "Corporate & Cyber Law Counsel",
-    hindi: "सहयोगी अधिवक्ता (कॉर्पोरेट एवं साइबर लॉ)",
+    role: "Criminal, Family & Revenue Counsel",
+    hindi: "अधिवक्ता (आपराधिक, पारिवारिक एवं राजस्व वाद)",
     experience: "10",
     unit: "Years",
     photo: "/nand-jee-upadhyay.jpg",
     specializations: [
-      "Corporate & Business Law",
-      "Intellectual Property Rights",
-      "Taxation & GST Advisory",
-      "Cyber Law & Data Privacy",
+      "Criminal Law · Bail & Bond",
+      "Family Court Litigation",
+      "Revenue Court Litigation",
+      "Mutation Cases & Appeals",
     ],
-    bio: "Adv. Nand Jee Kumar Upadhyay brings fresh, tech-forward legal expertise in corporate law, IPR, taxation, and the rapidly evolving field of cyber law — ensuring the panel stays ahead of India's most dynamic legal frontiers.",
-    icon: Cpu,
+    bio: "Adv. Nand Jee Kumar Upadhyay possesses 10 years of courtroom litigation practice with focused expertise in Criminal Law (Bail & Bond proceedings), Family Court litigation, Revenue Court matters, and Land Mutation (दाखिल-खारिज) cases and appeals across trial and appellate forums.",
+    icon: Scale,
   },
 ];
 
