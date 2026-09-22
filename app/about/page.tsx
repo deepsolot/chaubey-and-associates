@@ -16,6 +16,38 @@ import {
 
 const advocates = [
   {
+    name: "Adv. Manoj Kumar Chaubey",
+    role: "Senior Partner & Litigation Counsel",
+    hindi: "वरिष्ठ अधिवक्ता एवं प्रमुख परामर्शदाता",
+    experience: "40",
+    unit: "Years",
+    photo: "/manoj-chaubey.jpg",
+    specializations: [
+      "Civil & Criminal Litigation",
+      "Service & Administrative Law",
+      "Constitutional Matters & PILs",
+      "High Court & Supreme Court Practice",
+    ],
+    bio: "With an unmatched 40 years of practice, Adv. Manoj Kumar Chaubey is a distinguished senior counsel of the panel. His vast courtroom experience spans civil, criminal, and administrative law across District Courts, High Courts, and the Supreme Court of India.",
+    icon: Scale,
+  },
+  {
+    name: "Adv. Ashok Kumar Seth",
+    role: "Senior Counsel",
+    hindi: "वरिष्ठ अधिवक्ता",
+    experience: "30",
+    unit: "Years",
+    photo: "/ashok-seth.png",
+    specializations: [
+      "Property & Revenue Law",
+      "Criminal Defense",
+      "Consumer Protection",
+      "Family & Succession Law",
+    ],
+    bio: "Adv. Ashok Kumar Seth brings 30 years of razor-sharp legal acumen to the panel. Renowned for his command over property disputes, criminal defense strategy, and family law matters, he is a trusted name across Varanasi and Bihar courts.",
+    icon: Award,
+  },
+  {
     name: "Adv. Madan Kumar Upadhyay",
     role: "Lead Multi-Domain Counsel",
     hindi: "प्रमुख बहु-क्षेत्र अधिवक्ता",
@@ -47,38 +79,6 @@ const advocates = [
     ],
     bio: "Adv. Nand Jee Kumar Upadhyay brings fresh, tech-forward legal expertise in corporate law, IPR, taxation, and the rapidly evolving field of cyber law — ensuring the panel stays ahead of India's most dynamic legal frontiers.",
     icon: Cpu,
-  },
-  {
-    name: "Adv. Manoj Kumar Chaubey",
-    role: "Senior Partner & Litigation Counsel",
-    hindi: "वरिष्ठ अधिवक्ता एवं प्रमुख परामर्शदाता",
-    experience: "40",
-    unit: "Years",
-    photo: "/manoj-chaubey.jpg",
-    specializations: [
-      "Civil & Criminal Litigation",
-      "Service & Administrative Law",
-      "Constitutional Matters & PILs",
-      "High Court & Supreme Court Practice",
-    ],
-    bio: "With an unmatched 40 years of practice, Adv. Manoj Kumar Chaubey is a distinguished senior counsel of the panel. His vast courtroom experience spans civil, criminal, and administrative law across District Courts, High Courts, and the Supreme Court of India.",
-    icon: Scale,
-  },
-  {
-    name: "Adv. Ashok Kumar Seth",
-    role: "Senior Counsel",
-    hindi: "वरिष्ठ अधिवक्ता",
-    experience: "30",
-    unit: "Years",
-    photo: "/ashok-seth.png",
-    specializations: [
-      "Property & Revenue Law",
-      "Criminal Defense",
-      "Consumer Protection",
-      "Family & Succession Law",
-    ],
-    bio: "Adv. Ashok Kumar Seth brings 30 years of razor-sharp legal acumen to the panel. Renowned for his command over property disputes, criminal defense strategy, and family law matters, he is a trusted name across Varanasi and Bihar courts.",
-    icon: Award,
   },
 ];
 
