@@ -387,74 +387,208 @@ const advocateProfiles: AdvocateProfile[] = [
     },
     practiceAreas: [
       {
-        title: "Legal Advisory & Litigation",
-        titleHi: "विधिक परामर्श एवं वाद",
+        title: "Military Litigation",
+        titleHi: "सैन्य वाद",
         items: [
           {
-            label: "Civil & Criminal Advocacy",
-            desc: "Courtroom practice in civil suits, criminal cases & writ petitions",
+            label: "Court Martial Proceedings",
+            desc: "General, District & Summary Court Martial defense and proceedings",
           },
           {
-            label: "Administrative Law",
-            desc: "CCS/CCA rules, disciplinary proceedings, departmental inquiries",
+            label: "Armed Forces Acts Disputes",
+            desc: "Army, Navy & Air Force statutory disputes & service litigation",
           },
           {
-            label: "Service Matters",
-            desc: "Promotion, seniority, transfer & pension disputes for govt. employees",
+            label: "Service Grievances",
+            desc: "Disciplinary actions, wrongful discharge, pension & disability benefits",
           },
           {
-            label: "Contractual Disputes",
-            desc: "Government contracts, tender disputes, arbitration proceedings",
+            label: "Armed Forces Tribunal (AFT)",
+            desc: "Original applications & appeals before the Armed Forces Tribunal",
           },
         ],
       },
       {
-        title: "Aeronautical & Logistical Law",
-        titleHi: "वैमानिकी एवं तार्किक कानून",
+        title: "Central Services Litigation",
+        titleHi: "केंद्रीय सेवा वाद",
+        items: [
+          {
+            label: "CCS (Conduct) Rules Disputes",
+            desc: "Statutory interpretations, code of conduct & vigilance inquiries",
+          },
+          {
+            label: "CCA (Disciplinary & Appeal) Matters",
+            desc: "Inquiry reports, minor & major penalty appeals under CCA rules",
+          },
+          {
+            label: "Service Challenges",
+            desc: "Suspension, termination, dismissal, seniority & promotion disputes",
+          },
+          {
+            label: "CAT Practice",
+            desc: "Central Administrative Tribunal representation across benches",
+          },
+        ],
+      },
+      {
+        title: "Criminal Litigation",
+        titleHi: "दंड वाद",
+        items: [
+          {
+            label: "IPC / BNS Offences Trial",
+            desc: "Trial defense & prosecution under Bharatiya Nyaya Sanhita & IPC",
+          },
+          {
+            label: "BNSS / CrPC Procedures",
+            desc: "Procedures, remand hearing, investigation scrutiny under BNSS",
+          },
+          {
+            label: "Bail, Trial & District Appeals",
+            desc: "Anticipatory/regular bail, trial advocacy and criminal appeals",
+          },
+          {
+            label: "Special Acts Defense",
+            desc: "NDPS, POCSO, SC/ST Prevention of Atrocities Act representation",
+          },
+        ],
+      },
+      {
+        title: "Civil Litigation",
+        titleHi: "दीवानी वाद",
+        items: [
+          {
+            label: "CPC Procedures & Suits",
+            desc: "Plaint, written statement, evidence handling, issues & decrees",
+          },
+          {
+            label: "Property & Tenancy",
+            desc: "Title dispute suits, tenancy conflicts, partition & eviction matters",
+          },
+          {
+            label: "Injunctions & Executions",
+            desc: "Order 39 stay orders, ex parte decrees, execution of decrees",
+          },
+        ],
+      },
+      {
+        title: "Matrimonial Matters",
+        titleHi: "वैवाहिक मामले",
+        items: [
+          {
+            label: "Divorce Petitions",
+            desc: "Mutual consent divorce, contested divorce on cruelty, desertion, adultery",
+          },
+          {
+            label: "Restitution of Conjugal Rights",
+            desc: "Suit for re-joining spouse under relevant personal laws",
+          },
+          {
+            label: "Judicial Separation",
+            desc: "Legal separation remedies short of final dissolution",
+          },
+        ],
+      },
+      {
+        title: "Maintenance & Alimony",
+        titleHi: "भरण-पोषण एवं गुजारा भत्ता",
+        items: [
+          {
+            label: "BNSS / CrPC Sec. 125",
+            desc: "Maintenance proceedings for wife, minor children & dependent parents",
+          },
+          {
+            label: "Interim Maintenance",
+            desc: "Urgent monthly sustenance during pendency of matrimonial litigation",
+          },
+          {
+            label: "Permanent Alimony",
+            desc: "One-time financial settlement at the time of final decree",
+          },
+        ],
+      },
+      {
+        title: "Domestic Violence Cases",
+        titleHi: "घरेलू हिंसा मामले",
+        items: [
+          {
+            label: "Protection Orders",
+            desc: "Immediate relief and restraining orders from Magistrate courts",
+          },
+          {
+            label: "Residence Orders",
+            desc: "Right to shared household & non-eviction protection",
+          },
+          {
+            label: "Monetary Reliefs",
+            desc: "Compensation for medical & living expenses under DV Act",
+          },
+        ],
+      },
+      {
+        title: "Custody & Guardianship",
+        titleHi: "अभिरक्षा एवं संरक्षकता",
+        items: [
+          {
+            label: "Child Custody Petitions",
+            desc: "Custody disputes evaluated on welfare of the minor principle",
+          },
+          {
+            label: "Guardians and Wards Act",
+            desc: "Appointment and declaration of legal guardians for person and property",
+          },
+        ],
+      },
+      {
+        title: "Succession & Inheritance",
+        titleHi: "उत्तराधिकार एवं विरासत",
+        items: [
+          {
+            label: "Succession Certificate",
+            desc: "Petitions for movable debts, securities & bank claims",
+          },
+          {
+            label: "Partition Suits",
+            desc: "Ancestral & joint family property demarcation & division",
+          },
+          {
+            label: "Probate & Letters of Administration",
+            desc: "Will authentication, testamentary disputes & probate proceedings",
+          },
+        ],
+      },
+      {
+        title: "Appeals & Remedies",
+        titleHi: "अपील एवं विधिक उपचार",
+        items: [
+          {
+            label: "Family Court & District Forum",
+            desc: "Primary forum litigation for matrimonial & family disputes",
+          },
+          {
+            label: "District Judge & High Court Appeals",
+            desc: "Statutory appeals challenging subordinate family/civil court orders",
+          },
+          {
+            label: "Execution of Orders",
+            desc: "Strict legal enforcement of maintenance, custody and property distribution",
+          },
+        ],
+      },
+      {
+        title: "Aeronautical & Logistical Advisory",
+        titleHi: "वैमानिकी एवं तार्किक परामर्श",
         items: [
           {
             label: "Aviation Regulatory Compliance",
-            desc: "DGCA regulations, aircraft operations, safety compliance",
+            desc: "DGCA regulations, aircraft operations & regulatory compliance",
           },
           {
             label: "Logistics & Supply Chain",
-            desc: "Customs, warehousing disputes, transportation law",
+            desc: "Customs, warehousing disputes & multimodal transportation law",
           },
           {
             label: "Technical Operations Advisory",
-            desc: "Operational safety, maintenance regulations, liability",
-          },
-        ],
-      },
-      {
-        title: "Corporate Compliance & Audits",
-        titleHi: "कॉर्पोरेट अनुपालन एवं लेखापरीक्षा",
-        items: [
-          {
-            label: "Internal Audits",
-            desc: "Corporate governance audits, compliance reviews",
-          },
-          {
-            label: "Quality Inspection",
-            desc: "ISO standards, quality assurance legal framework",
-          },
-          {
-            label: "Regulatory Compliance",
-            desc: "Statutory compliance, government audit responses",
-          },
-        ],
-      },
-      {
-        title: "Mentorship & Training",
-        titleHi: "मार्गदर्शन एवं प्रशिक्षण",
-        items: [
-          {
-            label: "Legal Training Programs",
-            desc: "Training for corporate teams on legal compliance & risk management",
-          },
-          {
-            label: "Institutional Mentorship",
-            desc: "Guiding young advocates & law students in practice development",
+            desc: "Operational quality inspection, technical audits & documentation disputes",
           },
         ],
       },
