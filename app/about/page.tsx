@@ -42,9 +42,10 @@ const advocates = [
     unit: "Years",
     photo: "/ashok-seth.png",
     specializations: [
+      "Civil Suits & Plaint Drafting",
       "Property & Revenue Law",
-      "Criminal Defense",
-      "Consumer Protection",
+      "Criminal Defense & Bail",
+      "Consumer Protection Disputes",
       "Family & Succession Law",
     ],
     bio: "Adv. Ashok Kumar Seth brings 30 years of razor-sharp legal acumen to the panel. Renowned for his command over property disputes, criminal defense strategy, and family law matters, he is a trusted name across Varanasi and Bihar courts.",

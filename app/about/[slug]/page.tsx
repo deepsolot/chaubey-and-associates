@@ -234,9 +234,10 @@ const advocateProfiles: AdvocateProfile[] = [
     unit: "Years",
     photo: "/ashok-seth.png",
     specializations: [
+      "Civil Suits & Plaint Drafting",
       "Property & Revenue Law",
-      "Criminal Defense",
-      "Consumer Protection",
+      "Criminal Defense & Bail",
+      "Consumer Protection Disputes",
       "Family & Succession Law",
     ],
     bio: "Adv. Ashok Kumar Seth brings 30 years of razor-sharp legal acumen to the panel. Renowned for his command over property disputes, criminal defense strategy, and family law matters, he is a trusted name across Varanasi and Bihar courts. His deep understanding of revenue law and consumer protection makes him an invaluable asset for complex property and family matters.",
@@ -247,8 +248,26 @@ const advocateProfiles: AdvocateProfile[] = [
     },
     practiceAreas: [
       {
-        title: "Institution & Pre-Trial",
-        titleHi: "वाद दायर करना एवं प्री-ट्रायल",
+        title: "Pre-Litigation, Notice & Drafting",
+        titleHi: "प्री-लिटिगेशन, नोटिस एवं ड्राफ्टिंग",
+        items: [
+          {
+            label: "Legal Notice Drafting",
+            desc: "Eviction, recovery of money, consumer disputes",
+          },
+          {
+            label: "Negotiation & Settlement",
+            desc: "Parties को court जाने से पहले समझौते की कोशिश",
+          },
+          {
+            label: "Plaint Drafting",
+            desc: "Civil Suit (injunction, declaration, recovery, partition, tenancy)",
+          },
+        ],
+      },
+      {
+        title: "Institution of Suit & Pre-Trial",
+        titleHi: "वाद दायर करना एवं प्रक्रिया",
         items: [
           {
             label: "Institution of Suit",
@@ -291,8 +310,8 @@ const advocateProfiles: AdvocateProfile[] = [
         ],
       },
       {
-        title: "Judgment & Appeals",
-        titleHi: "निर्णय एवं अपील",
+        title: "Judgment, Decree & Execution",
+        titleHi: "निर्णय, डिक्री एवं निष्पादन",
         items: [
           {
             label: "Judgment & Decree",
@@ -309,8 +328,8 @@ const advocateProfiles: AdvocateProfile[] = [
         ],
       },
       {
-        title: "Special Civil Proceedings",
-        titleHi: "विशेष सिविल कार्यवाही",
+        title: "Rent, Property & Succession",
+        titleHi: "किराया, संपत्ति एवं उत्तराधिकार",
         items: [
           {
             label: "Rent Control / Tenancy Matters",
@@ -331,8 +350,8 @@ const advocateProfiles: AdvocateProfile[] = [
         ],
       },
       {
-        title: "Miscellaneous Civil Practice",
-        titleHi: "विविध सिविल प्रैक्टिस",
+        title: "Interlocutory & Miscellaneous Practice",
+        titleHi: "अंतरिम आवेदन एवं विविध प्रैक्टिस",
         items: [
           {
             label: "Interlocutory Applications",
