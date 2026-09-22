@@ -251,9 +251,19 @@ export default function AboutPage() {
                 </ul>
               </div>
 
-              <Link href="/contact" className="btn-gold">
-                Consult Adv. Madan Kumar <ArrowRight size={18} />
-              </Link>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/about/madan-kumar-upadhyay"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-gold"
+                >
+                  View Full Profile <ArrowRight size={18} />
+                </Link>
+                <Link href="/contact" className="btn-outline">
+                  Consult Adv. Madan Kumar
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -274,6 +284,8 @@ export default function AboutPage() {
               <Link
                 key={adv.name}
                 href={`/about/${adv.slug}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`glass-card p-7 block group hover:border-[#D4AF37]/60 transition-all duration-300 ${adv.featured ? "border-[#D4AF37]/50 shadow-lg shadow-[#D4AF37]/5" : ""}`}
               >
                 <div className="flex items-start gap-5 mb-5">
