@@ -5,32 +5,90 @@
 ---
 
 ## 1. Core Identity & Firm Details
-- **Firm Name:** **MK Associates** (previously referred to as Chaubey & Associates)
+- **Firm Name:** **MK Associates** (also known as Chaubey & Associates)
 - **Tagline / Motto:** न्याय · सत्य · निष्ठा (Justice · Truth · Dedication)
 - **Subtext:** Legal Counsel · दिल्ली · वाराणसी · कैमूर
 - **Official Emblem Logo:** `/public/logo.png` & `/app/icon.png` (Circular gold seal with scales of justice, wheat wreath, 3 stars, and Hindi ribbon).
-- **Target Custom Domain:** `newzenadvocate.com`
-  - A Record (`@`): `75.2.60.5`
-  - CNAME Record (`www`): `chaubey-and-associates.netlify.app`
-- **Live Netlify Production URL:** [https://chaubey-and-associates.netlify.app](https://chaubey-and-associates.netlify.app)
+- **Custom Domain Status:** Active & Live with SSL on **Vercel** at [https://www.newzenadvocate.com](https://www.newzenadvocate.com) (DNS via Hostinger)
+  - A Record (`@`): `76.76.21.21`
+  - CNAME Record (`www`): `cname.vercel-dns.com`
+- **Live Production URL:** [https://www.newzenadvocate.com](https://www.newzenadvocate.com)
 - **GitHub Repository:** [https://github.com/deepsolot/chaubey-and-associates](https://github.com/deepsolot/chaubey-and-associates) (branch: `main`)
+- **Clean Deliverable ZIP Archive:** `/Users/deep/Advocate/advocate-website-clean.zip` (7.7 MB, production-ready, no node_modules or caches).
 
 ---
 
-## 2. Advocate Panel & Experience
+## 2. Advocate Panel & Seniority Order
 
-| Advocate | Designation | Experience | Specializations | Photo Status |
-| :--- | :--- | :--- | :--- | :--- |
-| **Adv. Madan Kumar Upadhyay** | Lead Multi-Domain Counsel | 20 Years | Legal, Admin, Technical, Aeronautical, Logistics, Mentor, Quality Inspector & Systems Auditor (Univ. of Allahabad) | **Genuine Photo Active** (`/public/madan-upadhyay.jpg`) |
-| **Adv. Nand Jee Kumar Upadhyay** | Corporate & Cyber Law Counsel | 10 Years | Corporate, Tax (GST/IT), IPR & Cyber Law | Placeholder (to be updated later) |
-| **Adv. Manoj Kumar Chaubey** | Senior Partner & Litigation Counsel | 40 Years | Civil, Criminal, Administrative & PIL Litigator | Placeholder (to be updated later) |
-| **Adv. Ashok Kumar Seth** | Senior Counsel | 30 Years | Property, Land Titles, Civil & Family Law | Placeholder (to be updated later) |
+Advocates are strictly ordered on the About page by descending seniority:
 
-> **Advocate Priority Order**: Adv. Madan Kumar Upadhyay is established as the principal lead advocate on the portal, followed by Adv. Nand Jee Kumar Upadhyay, then Adv. Manoj Kumar Chaubey & Adv. Ashok Kumar Seth. Real photo for Adv. Madan Kumar Upadhyay is installed.
+| Seniority | Advocate | Role | Exp. | Photo Path | Dedicated Profile URL |
+| :---: | :--- | :--- | :---: | :--- | :--- |
+| **1st** | **Adv. Manoj Kumar Chaubey** | Senior Partner & Litigation Counsel | **40 Yrs** | `/public/manoj-chaubey.jpg` | `/about/manoj-kumar-chaubey` |
+| **2nd** | **Adv. Ashok Kumar Seth** | Senior Counsel | **30 Yrs** | `/public/ashok-seth.png` | `/about/ashok-kumar-seth` |
+| **3rd** | **Adv. Madan Kumar Upadhyay** | Lead Multi-Domain Counsel | **20 Yrs** | `/public/madan-upadhyay.jpg` | `/about/madan-kumar-upadhyay` |
+| **4th** | **Adv. Nand Jee Kumar Upadhyay** | Corporate & Cyber Law Counsel | **10 Yrs** | `/public/nand-jee-upadhyay.jpg` | `/about/nand-jee-kumar-upadhyay` |
+
+### Photo & Profile Status:
+- **All 4 advocates have real, genuine photos installed** in `/public/`.
+- Adv. Nand Jee Kumar Upadhyay's photo was updated with his latest professional courtroom portrait on Sept 22, 2026.
+- In `/app/about/page.tsx`, every advocate card is **clickable and opens in a new tab** (`target="_blank" rel="noopener noreferrer"`).
+- The featured advocate section for Adv. Madan Kumar also includes a direct "View Full Profile" button that opens in a new tab.
+- The 1985–2024 "Our Journey" timeline milestones section has been removed from the About page.
 
 ---
 
-## 3. Contact & Office Information
+## 3. Dedicated Advocate Profiles & Specialization Data
+
+All profile routes are statically generated at `/about/[slug]` via Next.js 16 async `params`:
+
+### A. Adv. Manoj Kumar Chaubey (`/about/manoj-kumar-chaubey`)
+- Pre-Litigation, Notice & Drafting (Eviction, recovery of money, consumer disputes, pre-court negotiation)
+- Institution of Suit & Pre-Trial (Civil Judge Junior/Senior Division, valuation, stamp duty, summons)
+- Pleadings & Evidence (Written statements, replication, issues framing, affidavit evidence, Order 39 & Order 7 Rule 11)
+- Judgment, Decree & Execution (Appeals before District Judge, attachment of property, possession recovery)
+- Rent, Property & Succession (Rent control, succession certificates, partition suits, injunctions)
+- Interlocutory & Miscellaneous Practice (Order 23 compromise decrees, ex parte decree remedies)
+- Criminal & Appellate Litigation (Sessions trials, High Court appeals/revisions, Article 226/32 PILs, Supreme Court SLPs)
+- Service & Administrative Law (CCS/CCA rules, disciplinary inquiries, service disputes)
+
+### B. Adv. Ashok Kumar Seth (`/about/ashok-kumar-seth`)
+- Institution & Pre-Trial (Plaint filing before Civil Judges, court fees & valuation, summons service)
+- Pleadings & Evidence (Written statement, rejoinder, issues framing, witness evidence, interim applications)
+- Judgment & Appeals (Final decree, District Court appeals, execution of decrees)
+- Special Civil Proceedings (Rent control, succession certificates, partition & property, status quo orders)
+- Miscellaneous Civil Practice (Interlocutory reliefs, Order 23 compromise, ex parte remedies)
+- Property & Revenue Law (Land title disputes, khata-khatuni, land mutation, land acquisition)
+- Criminal Defense (Bail, IPC/BNS trial defense, quashing petitions)
+- Consumer Protection (District, State & National Consumer Forum complaints)
+- Family & Succession Law (Divorce, Sec. 125 CrPC maintenance, child custody, probate/wills)
+
+### C. Adv. Madan Kumar Upadhyay (`/about/madan-kumar-upadhyay`)
+- Military Litigation (Court Martial proceedings, Army/Navy/Air Force Acts disputes, Armed Forces Tribunal AFT)
+- Central Services Litigation (CCS Conduct Rules disputes, CCA Disciplinary & Appeal matters, CAT practice)
+- Criminal Litigation (IPC/BNS offences trial, BNSS procedures, bail, NDPS, POCSO, SC/ST Act)
+- Civil Litigation (CPC procedures, property disputes, partition suits, injunctions, execution)
+- Matrimonial Matters (Mutual consent & contested divorce, restitution of conjugal rights, judicial separation)
+- Maintenance & Alimony (BNSS/CrPC Sec. 125, interim maintenance, permanent alimony)
+- Domestic Violence Cases (Protection orders, shared household residence orders, monetary relief)
+- Custody & Guardianship (Welfare of minor principle, Guardians and Wards Act)
+- Succession & Inheritance (Succession certificate, partition suits, probate & administration)
+- Appeals & Remedies (Family Court, District Judge & High Court appeals, order execution)
+- Aeronautical & Logistical Advisory (DGCA regulatory compliance, logistics/customs, technical operations & audits)
+
+### D. Adv. Nand Jee Kumar Upadhyay (`/about/nand-jee-kumar-upadhyay`)
+- Trial Court Criminal Practice (FIR/complaint drafting, bail applications, remand arguments, charge-sheet scrutiny, charge framing, evidence, discharge)
+- Appellate Criminal Practice (Magistrate judgment appeals, revision petitions, suspension of sentence)
+- Special Criminal Proceedings (Sec. 125 maintenance, DV Act complaints, Juvenile Justice Board, NDPS/POCSO/SC-ST)
+- Miscellaneous Criminal Practice (Surety verification, custody & property release applications)
+- Corporate & Business Law (Company incorporation, contracts, corporate governance)
+- Intellectual Property Rights (Trademark registration, copyright, patent advisory)
+- Taxation & GST Advisory (GST registration & compliance, tax disputes/appeals, tax planning)
+- Cyber Law & Data Privacy (Online fraud, DPDP Act 2023 compliance, IT Act proceedings)
+
+---
+
+## 4. Contact & Office Information
 
 ### Direct Contact Numbers:
 - **Primary / WhatsApp:** `+91 9305592322` (Adv. Madan Kumar Upadhyay)
@@ -49,31 +107,8 @@
 
 ---
 
-## 4. Key Functional Features & Architecture
-
-### A. Appointment Booking & Direct WhatsApp Integration
-- Form at `/contact`:
-  - When submitted, it calls `/app/api/contact/route.ts` (100% serverless-safe in-memory store + structured logging).
-  - Automatically formats a complete appointment breakdown and directs it to **WhatsApp (+91 9305592322)**.
-  - Generates an immediate visual confirmation card with reference ID and a 1-click **"💬 Send to WhatsApp (+91 93055 92322)"** button.
-
-### B. Dedicated Blog & Legal Insights (`/blog` & `/blog/[slug]`)
-- Central data file: `/data/articles.ts`
-- Static pre-rendering via `generateStaticParams()` across all 6 articles.
-- Clicking any card on `/blog` or `/` opens the full article in a **new tab** (`target="_blank"`).
-- Every article includes custom high-resolution cinematic photography in `/public/blog/`:
-  1. `understanding-bns-2023-key-changes-from-ipc` → `/blog/bns.jpg`
-  2. `gst-compliance-for-small-businesses-guide` → `/blog/gst.jpg`
-  3. `how-to-register-trademark-in-india-step-by-step` → `/blog/trademark.jpg`
-  4. `pil-in-india-when-how-to-file` → `/blog/pil.jpg`
-  5. `cyber-crime-in-india-laws-reporting-remedies` → `/blog/cyber.jpg`
-  6. `property-disputes-in-india-legal-routes-remedies` → `/blog/property.jpg`
-
-### C. Client Portal (`/portal`)
-- Mock client login via Case Number (e.g. `DL-2026-CR-0891`) + Date of Birth.
-- Tracks hearing dates, stage of case, advocate assigned, and legal filings.
-
-### D. Aesthetic Design System
-- **Colors:** Midnight Black (`#050505`, `#0A0A0A`) + Amber Gold (`#D4AF37`, `#F0D060`, `#B8952A`).
-- **Typography:** Playfair Display (Serif headings) + Outfit/Inter (Clean modern sans).
-- **Bilingual:** All headings and primary actions contain English + Hindi subtitle equivalents.
+## 5. Hosting & Deployment History
+- **Hosting Migration**: Migrated from Netlify to **Vercel** in September 2026.
+- **Vercel Project**: Automated continuous deployment linked to GitHub repo `https://github.com/deepsolot/chaubey-and-associates` (`main` branch).
+- **Framework**: Next.js 16.3.5 (Turbopack) with static site generation (`generateStaticParams`). All dynamic routes use async `Promise<{ slug: string }>` params pattern.
+- **Cache Management**: Unused caches and stale background node dev processes purged.
