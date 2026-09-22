@@ -63,34 +63,128 @@ const advocateProfiles: AdvocateProfile[] = [
     },
     practiceAreas: [
       {
-        title: "Civil Litigation",
-        titleHi: "सिविल वाद",
+        title: "Pre-Litigation, Notice & Drafting",
+        titleHi: "प्री-लिटिगेशन, नोटिस एवं ड्राफ्टिंग",
         items: [
           {
-            label: "Property Disputes",
-            desc: "Title suits, partition suits, injunction applications, specific performance",
+            label: "Legal Notice Drafting",
+            desc: "Eviction, recovery of money, consumer disputes",
           },
           {
-            label: "Contract Enforcement",
-            desc: "Breach of contract, recovery suits, specific relief applications",
+            label: "Negotiation & Settlement",
+            desc: "Parties को court जाने से पहले समझौते की कोशिश",
           },
           {
-            label: "Declaratory Suits",
-            desc: "Declaration of rights, title, and legal character",
-          },
-          {
-            label: "Execution Proceedings",
-            desc: "Decree execution, attachment & sale of property",
-          },
-          {
-            label: "Rent & Eviction Matters",
-            desc: "Landlord-tenant disputes under state Rent Control Acts",
+            label: "Plaint Drafting",
+            desc: "Civil Suit (injunction, declaration, recovery, partition, tenancy)",
           },
         ],
       },
       {
-        title: "Criminal Litigation",
-        titleHi: "आपराधिक वाद",
+        title: "Institution of Suit & Pre-Trial",
+        titleHi: "वाद दायर करना एवं प्रक्रिया",
+        items: [
+          {
+            label: "Institution of Suit",
+            desc: "Civil Judge (Junior Division / Senior Division) के सामने plaint दाखिल",
+          },
+          {
+            label: "Court Fees & Valuation",
+            desc: "Proper valuation और stamp duty compliance",
+          },
+          {
+            label: "Summons Service",
+            desc: "Defendant को notice भेजना",
+          },
+        ],
+      },
+      {
+        title: "Pleadings & Evidence",
+        titleHi: "अभिवचन एवं साक्ष्य",
+        items: [
+          {
+            label: "Written Statement",
+            desc: "Defendant का जवाब",
+          },
+          {
+            label: "Replication",
+            desc: "Plaintiff का rejoinder",
+          },
+          {
+            label: "Issues Framing",
+            desc: "Court द्वारा points of determination तय करना",
+          },
+          {
+            label: "Evidence",
+            desc: "Affidavit evidence, cross‑examination, documentary proof",
+          },
+          {
+            label: "Interim Applications",
+            desc: "Order 39 (injunction), Order 7 Rule 11 (rejection of plaint), etc.",
+          },
+        ],
+      },
+      {
+        title: "Judgment, Decree & Execution",
+        titleHi: "निर्णय, डिक्री एवं निष्पादन",
+        items: [
+          {
+            label: "Judgment & Decree",
+            desc: "Civil Judge द्वारा final decision",
+          },
+          {
+            label: "Appeal",
+            desc: "District Judge के सामने subordinate court के judgment के खिलाफ",
+          },
+          {
+            label: "Execution of Decree",
+            desc: "Decree holder द्वारा property attachment, possession, recovery",
+          },
+        ],
+      },
+      {
+        title: "Rent, Property & Succession",
+        titleHi: "किराया, संपत्ति एवं उत्तराधिकार",
+        items: [
+          {
+            label: "Rent Control / Tenancy Matters",
+            desc: "District Court या Rent Controller",
+          },
+          {
+            label: "Succession Certificate",
+            desc: "Civil Judge द्वारा issuance",
+          },
+          {
+            label: "Partition & Property Disputes",
+            desc: "Local Commissioner appointment, site inspection",
+          },
+          {
+            label: "Injunctions",
+            desc: "Status quo orders, stay orders",
+          },
+        ],
+      },
+      {
+        title: "Interlocutory & Miscellaneous Practice",
+        titleHi: "अंतरिम आवेदन एवं विविध प्रैक्टिस",
+        items: [
+          {
+            label: "Interlocutory Applications",
+            desc: "Temporary reliefs during suit",
+          },
+          {
+            label: "Settlement Recording",
+            desc: "Compromise decree under Order 23 CPC",
+          },
+          {
+            label: "Ex Parte Decree",
+            desc: "जब defendant absent रहता है",
+          },
+        ],
+      },
+      {
+        title: "Criminal & Appellate Litigation",
+        titleHi: "आपराधिक एवं अपीलीय वाद",
         items: [
           {
             label: "Bail Applications",
@@ -101,12 +195,16 @@ const advocateProfiles: AdvocateProfile[] = [
             desc: "Full trial conduct — prosecution & defense in Sessions Court",
           },
           {
-            label: "Criminal Appeals",
-            desc: "Appeals against conviction before High Court & Supreme Court",
+            label: "Criminal Appeals & Revisions",
+            desc: "Challenging Magistrate & Sessions judgments before High Court",
           },
           {
-            label: "Criminal Revision",
-            desc: "Revision petitions challenging Magistrate & Sessions orders",
+            label: "Writ Petitions & PILs",
+            desc: "Article 226 & 32 petitions before High Court & Supreme Court",
+          },
+          {
+            label: "SLP & Supreme Court Practice",
+            desc: "Special Leave Petitions & appeals before the Supreme Court of India",
           },
         ],
       },
@@ -119,34 +217,8 @@ const advocateProfiles: AdvocateProfile[] = [
             desc: "CCS/CCA rules, disciplinary actions, suspension & reinstatement",
           },
           {
-            label: "Writ Petitions",
-            desc: "Article 226 & 32 petitions before High Court & Supreme Court",
-          },
-          {
             label: "Service Disputes",
             desc: "Seniority, promotion, transfer & pension matters",
-          },
-          {
-            label: "Public Interest Litigation",
-            desc: "Filing & arguing PILs on constitutional matters",
-          },
-        ],
-      },
-      {
-        title: "Appellate & Supreme Court Practice",
-        titleHi: "अपीलीय एवं सर्वोच्च न्यायालय",
-        items: [
-          {
-            label: "High Court Appeals",
-            desc: "First & second appeals, letters patent appeals",
-          },
-          {
-            label: "SLP & Supreme Court",
-            desc: "Special Leave Petitions & appeals before the Supreme Court of India",
-          },
-          {
-            label: "Review & Curative Petitions",
-            desc: "Post-judgment remedies in appellate courts",
           },
         ],
       },
