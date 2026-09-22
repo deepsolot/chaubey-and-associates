@@ -11,21 +11,26 @@ export async function POST(req: NextRequest) {
       return NextResponse.redirect(new URL("/blog?newsletter=error", req.url));
     }
 
-    const filePath = path.join(process.cwd(), "data", "newsletter.json");
+    try {
+      const dirPath = path.join(process.cwd(), "data");
+      const filePath = path.join(dirPath, "newsletter.json");
 
-    if (!fs.existsSync(path.join(process.cwd(), "data"))) {
-      fs.mkdirSync(path.join(process.cwd(), "data"));
-    }
+      if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
+      }
 
-    let subscribers: { email: string; subscribedAt: string }[] = [];
-    if (fs.existsSync(filePath)) {
-      subscribers = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    }
+      let subscribers: { email: string; subscribedAt: string }[] = [];
+      if (fs.existsSync(filePath)) {
+        subscribers = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+      }
 
-    // Avoid duplicates
-    if (!subscribers.find((s) => s.email === email)) {
-      subscribers.push({ email, subscribedAt: new Date().toISOString() });
-      fs.writeFileSync(filePath, JSON.stringify(subscribers, null, 2));
+      // Avoid duplicates
+      if (!subscribers.find((s) => s.email === email)) {
+        subscribers.push({ email, subscribedAt: new Date().toISOString() });
+        fs.writeFileSync(filePath, JSON.stringify(subscribers, null, 2));
+      }
+    } catch (fsErr) {
+      console.warn("Serverless environment filesystem warning:", fsErr);
     }
 
     return NextResponse.redirect(new URL("/blog?newsletter=success", req.url));
