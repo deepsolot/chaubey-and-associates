@@ -433,15 +433,3 @@ h1, h2, h3 {
   color: rgba(255,255,255,0.5);
 }
 
-/* Hide Netlify "Powered by" badge */
-[data-netlify-widget],
-.netlify-identity-widget,
-#netlify-modal,
-.netlify-badge,
-div[class*="netlify"],
-iframe[src*="netlify"] {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
