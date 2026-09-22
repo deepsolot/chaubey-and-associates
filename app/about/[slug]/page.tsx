@@ -174,6 +174,108 @@ const advocateProfiles: AdvocateProfile[] = [
     },
     practiceAreas: [
       {
+        title: "Institution & Pre-Trial",
+        titleHi: "वाद दायर करना एवं प्री-ट्रायल",
+        items: [
+          {
+            label: "Institution of Suit",
+            desc: "Civil Judge (Junior Division / Senior Division) के सामने plaint दाखिल",
+          },
+          {
+            label: "Court Fees & Valuation",
+            desc: "Proper valuation और stamp duty compliance",
+          },
+          {
+            label: "Summons Service",
+            desc: "Defendant को notice भेजना",
+          },
+        ],
+      },
+      {
+        title: "Pleadings & Evidence",
+        titleHi: "अभिवचन एवं साक्ष्य",
+        items: [
+          {
+            label: "Written Statement",
+            desc: "Defendant का जवाब",
+          },
+          {
+            label: "Replication",
+            desc: "Plaintiff का rejoinder",
+          },
+          {
+            label: "Issues Framing",
+            desc: "Court द्वारा points of determination तय करना",
+          },
+          {
+            label: "Evidence",
+            desc: "Affidavit evidence, cross‑examination, documentary proof",
+          },
+          {
+            label: "Interim Applications",
+            desc: "Order 39 (injunction), Order 7 Rule 11 (rejection of plaint), etc.",
+          },
+        ],
+      },
+      {
+        title: "Judgment & Appeals",
+        titleHi: "निर्णय एवं अपील",
+        items: [
+          {
+            label: "Judgment & Decree",
+            desc: "Civil Judge द्वारा final decision",
+          },
+          {
+            label: "Appeal",
+            desc: "District Judge के सामने subordinate court के judgment के खिलाफ",
+          },
+          {
+            label: "Execution of Decree",
+            desc: "Decree holder द्वारा property attachment, possession, recovery",
+          },
+        ],
+      },
+      {
+        title: "Special Civil Proceedings",
+        titleHi: "विशेष सिविल कार्यवाही",
+        items: [
+          {
+            label: "Rent Control / Tenancy Matters",
+            desc: "District Court या Rent Controller",
+          },
+          {
+            label: "Succession Certificate",
+            desc: "Civil Judge द्वारा issuance",
+          },
+          {
+            label: "Partition & Property Disputes",
+            desc: "Local Commissioner appointment, site inspection",
+          },
+          {
+            label: "Injunctions",
+            desc: "Status quo orders, stay orders",
+          },
+        ],
+      },
+      {
+        title: "Miscellaneous Civil Practice",
+        titleHi: "विविध सिविल प्रैक्टिस",
+        items: [
+          {
+            label: "Interlocutory Applications",
+            desc: "Temporary reliefs during suit",
+          },
+          {
+            label: "Settlement Recording",
+            desc: "Compromise decree under Order 23 CPC",
+          },
+          {
+            label: "Ex Parte Decree",
+            desc: "जब defendant absent रहता है",
+          },
+        ],
+      },
+      {
         title: "Property & Revenue Law",
         titleHi: "संपत्ति एवं राजस्व कानून",
         items: [
