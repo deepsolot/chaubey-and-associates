@@ -50,10 +50,11 @@ const advocateProfiles: AdvocateProfile[] = [
     unit: "Years",
     photo: "/manoj-chaubey.jpg",
     specializations: [
-      "Civil & Criminal Litigation",
-      "Service & Administrative Law",
-      "Constitutional Matters & PILs",
-      "High Court & Supreme Court Practice",
+      "Civil Suits & Plaint Drafting",
+      "Pre-Litigation & Legal Notice",
+      "Pleadings, Evidence & Injunctions",
+      "Appeals, Decrees & Execution",
+      "Property, Tenancy & Succession",
     ],
     bio: "With an unmatched 40 years of practice, Adv. Manoj Kumar Chaubey is a distinguished senior counsel of the panel. His vast courtroom experience spans civil, criminal, and administrative law across District Courts, High Courts, and the Supreme Court of India. He is the founding member of the panel and has mentored generations of legal professionals.",
     quote: {
@@ -998,10 +999,10 @@ export default async function AdvocateProfilePage({ params }: Props) {
         <div className="container-custom">
           <div className="text-center mb-14">
             <div className="section-label mb-3">
-              Practice Areas · विशेषज्ञता क्षेत्र
+              Specialisation &amp; Practice Areas · विशेषज्ञता क्षेत्र
             </div>
             <h2 className="section-title">
-              Detailed <span>Expertise</span>
+              Detailed Specialisations &amp; <span>Expertise</span>
             </h2>
           </div>
 
