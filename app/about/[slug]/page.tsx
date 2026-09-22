@@ -466,10 +466,11 @@ const advocateProfiles: AdvocateProfile[] = [
     unit: "Years",
     photo: "/madan-upadhyay.jpg",
     specializations: [
-      "Legal, Administrative & Technical Advisory",
-      "Aeronautical & Logistical Law",
-      "Corporate Compliance & Audits",
-      "Mentorship, Training & Quality Inspection",
+      "Military Litigation & AFT",
+      "Central Services & CAT Practice",
+      "Criminal & Civil Litigation",
+      "Family & Matrimonial Law",
+      "Aeronautical & Multi-Domain Advisory",
     ],
     bio: "Adv. Madan Kumar Upadhyay is an alumnus of the University of Allahabad — one of India's premier institutions — uniquely positioned with 20 years of cumulative experience spanning legal practice alongside expertise in Administration, Technical Operations, Aeronautics, Logistics, Mentoring, Quality Inspection, and Auditing — making him an indispensable multi-domain counsel for complex, cross-sector cases.",
     quote: {
@@ -487,16 +488,16 @@ const advocateProfiles: AdvocateProfile[] = [
             desc: "General, District & Summary Court Martial defense and proceedings",
           },
           {
-            label: "Armed Forces Acts Disputes",
+            label: "Army/Navy/Air Force Acts Disputes",
             desc: "Army, Navy & Air Force statutory disputes & service litigation",
           },
           {
             label: "Service Grievances",
-            desc: "Disciplinary actions, wrongful discharge, pension & disability benefits",
+            desc: "Disciplinary actions, pensions & disability benefits",
           },
           {
             label: "Armed Forces Tribunal (AFT)",
-            desc: "Original applications & appeals before the Armed Forces Tribunal",
+            desc: "Appeals before Armed Forces Tribunal",
           },
         ],
       },
@@ -513,12 +514,12 @@ const advocateProfiles: AdvocateProfile[] = [
             desc: "Inquiry reports, minor & major penalty appeals under CCA rules",
           },
           {
-            label: "Service Challenges",
-            desc: "Suspension, termination, dismissal, seniority & promotion disputes",
+            label: "Suspension, Dismissal & Promotion",
+            desc: "Suspension, dismissal, promotion challenges",
           },
           {
             label: "CAT Practice",
-            desc: "Central Administrative Tribunal representation across benches",
+            desc: "CAT (Central Administrative Tribunal) practice",
           },
         ],
       },
@@ -528,19 +529,19 @@ const advocateProfiles: AdvocateProfile[] = [
         items: [
           {
             label: "IPC / BNS Offences Trial",
-            desc: "Trial defense & prosecution under Bharatiya Nyaya Sanhita & IPC",
+            desc: "IPC/BNS offences trial prosecution & defense",
           },
           {
-            label: "BNSS / CrPC Procedures",
-            desc: "Procedures, remand hearing, investigation scrutiny under BNSS",
+            label: "BNSS Procedures",
+            desc: "BNSS (CrPC equivalent) procedures",
           },
           {
-            label: "Bail, Trial & District Appeals",
-            desc: "Anticipatory/regular bail, trial advocacy and criminal appeals",
+            label: "Bail, Remand & Appeals",
+            desc: "Bail, remand, trial, appeal up to District Court",
           },
           {
             label: "Special Acts Defense",
-            desc: "NDPS, POCSO, SC/ST Prevention of Atrocities Act representation",
+            desc: "Special Acts: NDPS, POCSO, SC/ST Act",
           },
         ],
       },
@@ -549,16 +550,16 @@ const advocateProfiles: AdvocateProfile[] = [
         titleHi: "दीवानी वाद",
         items: [
           {
-            label: "CPC Procedures & Suits",
-            desc: "Plaint, written statement, evidence handling, issues & decrees",
+            label: "CPC Procedures",
+            desc: "CPC procedures (plaint, written statement, evidence, decree)",
           },
           {
-            label: "Property & Tenancy",
-            desc: "Title dispute suits, tenancy conflicts, partition & eviction matters",
+            label: "Property, Tenancy & Partition",
+            desc: "Property disputes, tenancy, partition suits",
           },
           {
-            label: "Injunctions & Executions",
-            desc: "Order 39 stay orders, ex parte decrees, execution of decrees",
+            label: "Injunctions & Decrees",
+            desc: "Injunctions, ex parte decrees, execution of decrees",
           },
         ],
       },
@@ -568,15 +569,15 @@ const advocateProfiles: AdvocateProfile[] = [
         items: [
           {
             label: "Divorce Petitions",
-            desc: "Mutual consent divorce, contested divorce on cruelty, desertion, adultery",
+            desc: "Mutual consent, contested divorce (cruelty, desertion, adultery)",
           },
           {
             label: "Restitution of Conjugal Rights",
-            desc: "Suit for re-joining spouse under relevant personal laws",
+            desc: "Suit for re‑joining spouse",
           },
           {
             label: "Judicial Separation",
-            desc: "Legal separation remedies short of final dissolution",
+            desc: "Relief short of divorce",
           },
         ],
       },
@@ -586,15 +587,15 @@ const advocateProfiles: AdvocateProfile[] = [
         items: [
           {
             label: "BNSS / CrPC Sec. 125",
-            desc: "Maintenance proceedings for wife, minor children & dependent parents",
+            desc: "Maintenance for wife, children, parents",
           },
           {
             label: "Interim Maintenance",
-            desc: "Urgent monthly sustenance during pendency of matrimonial litigation",
+            desc: "During pendency of matrimonial suit",
           },
           {
             label: "Permanent Alimony",
-            desc: "One-time financial settlement at the time of final decree",
+            desc: "At the time of divorce decree",
           },
         ],
       },
@@ -604,15 +605,15 @@ const advocateProfiles: AdvocateProfile[] = [
         items: [
           {
             label: "Protection Orders",
-            desc: "Immediate relief and restraining orders from Magistrate courts",
+            desc: "Magistrate द्वारा relief",
           },
           {
             label: "Residence Orders",
-            desc: "Right to shared household & non-eviction protection",
+            desc: "Right to shared household",
           },
           {
             label: "Monetary Reliefs",
-            desc: "Compensation for medical & living expenses under DV Act",
+            desc: "Compensation for expenses",
           },
         ],
       },
@@ -622,11 +623,11 @@ const advocateProfiles: AdvocateProfile[] = [
         items: [
           {
             label: "Child Custody Petitions",
-            desc: "Custody disputes evaluated on welfare of the minor principle",
+            desc: "Welfare of minor principle",
           },
           {
             label: "Guardians and Wards Act",
-            desc: "Appointment and declaration of legal guardians for person and property",
+            desc: "Appointment of guardian",
           },
         ],
       },
@@ -636,15 +637,15 @@ const advocateProfiles: AdvocateProfile[] = [
         items: [
           {
             label: "Succession Certificate",
-            desc: "Petitions for movable debts, securities & bank claims",
+            desc: "For debts and securities",
           },
           {
             label: "Partition Suits",
-            desc: "Ancestral & joint family property demarcation & division",
+            desc: "Family property division",
           },
           {
             label: "Probate & Letters of Administration",
-            desc: "Will authentication, testamentary disputes & probate proceedings",
+            desc: "Will disputes",
           },
         ],
       },
@@ -653,16 +654,16 @@ const advocateProfiles: AdvocateProfile[] = [
         titleHi: "अपील एवं विधिक उपचार",
         items: [
           {
-            label: "Family Court & District Forum",
-            desc: "Primary forum litigation for matrimonial & family disputes",
+            label: "Family Court / District Court",
+            desc: "Primary forum for family disputes",
           },
           {
-            label: "District Judge & High Court Appeals",
-            desc: "Statutory appeals challenging subordinate family/civil court orders",
+            label: "Appeals",
+            desc: "District Judge or High Court depending on statute",
           },
           {
             label: "Execution of Orders",
-            desc: "Strict legal enforcement of maintenance, custody and property distribution",
+            desc: "Enforcement of maintenance, custody, property division",
           },
         ],
       },
