@@ -20,6 +20,7 @@ const quickLinks = [
   { label: "Blog / ब्लॉग", href: "/blog" },
   { label: "Contact / संपर्क", href: "/contact" },
   { label: "Client Portal", href: "/portal" },
+  { label: "Admin Portal", href: "/admin/login" },
 ];
 
 const addresses = [
@@ -238,6 +239,12 @@ export default function Footer() {
               className="hover:text-[#D4AF37] transition-colors"
             >
               Disclaimer
+            </Link>
+            <Link
+              href="/admin/login"
+              className="hover:text-[#D4AF37] transition-colors text-white/20 hover:text-[#D4AF37]"
+            >
+              Advocate Admin
             </Link>
           </div>
         </div>
