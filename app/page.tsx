@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LatestAnnouncements from "@/components/LatestAnnouncements";
 import {
   ArrowRight,
   Scale,
@@ -587,6 +588,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ===== LATEST ANNOUNCEMENTS (admin-driven) ===== */}
+      <LatestAnnouncements />
 
       {/* ===== FINAL CTA ===== */}
       <section className="py-24 bg-[#050505] border-t border-[#D4AF37]/10">
