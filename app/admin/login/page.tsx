@@ -16,8 +16,7 @@ export default function AdminLoginPage() {
       if (isAdmin) {
         router.replace("/admin/dashboard");
       } else {
-        // Signed in but not admin — show error
-        setError(`Access denied. ${user.email} is not an admin account. Only maddydragon85@gmail.com has admin access.`);
+        setError(`Access denied. ${user.email} is not authorized as an admin. Authorized accounts: maddydragon85@gmail.com, deepaksolot@gmail.com`);
       }
     }
   }, [user, isAdmin, isLoading, router]);

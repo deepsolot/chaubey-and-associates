@@ -25,13 +25,12 @@ export default function LatestAnnouncements() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const q = query(
-          collection(db, "blog_posts"),
-          where("published", "==", true),
-          orderBy("createdAt", "desc")
-        );
-        const snap = await getDocs(q);
-        const data = snap.docs.slice(0, 3).map(d => ({ id: d.id, ...d.data() } as BlogPost));
+        const snap = await getDocs(collection(db, "blog_posts"));
+        const data = snap.docs
+          .map(d => ({ id: d.id, ...d.data() } as BlogPost & { createdAt?: { seconds?: number } }))
+          .filter(p => p.published)
+          .sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0))
+          .slice(0, 3);
         setPosts(data);
       } catch (e) {
         console.error("Announcements fetch error:", e);
@@ -52,7 +51,36 @@ export default function LatestAnnouncements() {
     );
   }
 
-  if (posts.length === 0) return null;
+  if (posts.length === 0) {
+    return (
+      <section className="py-16 bg-[#050505] border-t border-[#D4AF37]/10">
+        <div className="container-custom">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+            <div>
+              <div className="section-label mb-2 flex items-center gap-2">
+                <Megaphone size={13} className="text-[#D4AF37]" />
+                Latest Updates · नवीनतम समाचार
+              </div>
+              <h2 className="section-title">Firm <span>Announcements</span></h2>
+            </div>
+            <a href="/admin/login" className="inline-flex items-center gap-2 text-xs border border-[#D4AF37]/30 hover:border-[#D4AF37] text-[#D4AF37] px-4 py-2 rounded transition-all">
+              Advocate Admin Login →
+            </a>
+          </div>
+          <div className="glass-card border border-white/5 p-8 rounded-lg text-center max-w-xl mx-auto">
+            <Megaphone size={28} className="text-[#D4AF37]/40 mx-auto mb-3" />
+            <h3 className="font-serif text-lg text-white mb-2">No Public Announcements Yet</h3>
+            <p className="text-white/40 text-sm mb-5">
+              Official notifications, court circulars, and legal notices will be published here by our advocates.
+            </p>
+            <a href="/admin/login" className="btn-gold text-xs py-2 px-5 inline-block">
+              Login to Post an Announcement
+            </a>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="py-20 bg-[#050505] border-t border-[#D4AF37]/10">

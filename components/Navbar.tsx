@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
   { label: "Client Portal", href: "/portal" },
+  { label: "Admin", href: "/admin/login" },
 ];
 
 export default function Navbar() {
@@ -58,15 +59,23 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) =>
             link.label === "Client Portal" ? (
               <Link
                 key={link.label}
                 href={link.href}
-                className="btn-gold text-xs py-2 px-5"
+                className="btn-gold text-xs py-2 px-4"
               >
                 {link.label}
+              </Link>
+            ) : link.label === "Admin" ? (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-xs py-1.5 px-3 rounded border border-[#D4AF37]/40 text-[#D4AF37] hover:bg-[#D4AF37]/15 transition-all font-semibold"
+              >
+                Admin
               </Link>
             ) : (
               <Link key={link.label} href={link.href} className="nav-link">
