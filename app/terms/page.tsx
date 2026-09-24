@@ -56,7 +56,7 @@ export default function TermsPage() {
               3. Jurisdiction
             </h2>
             <p className="text-sm text-white/70">
-              Any disputes arising out of the use of this website or legal services provided shall be subject to the exclusive jurisdiction of the competent courts in New Delhi or Varanasi, Uttar Pradesh.
+              Any disputes arising out of the use of this website or legal services provided shall be subject to the exclusive jurisdiction of the competent courts in New Delhi.
             </p>
           </section>
         </div>

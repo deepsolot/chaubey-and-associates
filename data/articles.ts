@@ -127,59 +127,6 @@ export const articles: Article[] = [
       "Tax rules undergo continuous updates via GST Council notifications. Consult your tax counsel before responding to statutory tax demands.",
   },
   {
-    id: 3,
-    slug: "how-to-register-trademark-in-india-step-by-step",
-    title: "How to Register a Trademark in India: Step-by-Step",
-    hindi: "भारत में ट्रेडमार्क पंजीकरण कैसे करें: प्रक्रिया, समय-सीमा और सुरक्षा",
-    date: "September 1, 2026",
-    category: "IPR",
-    readTime: "8 min read",
-    author: "Adv. Madan Kumar Upadhyay",
-    authorRole: "Multi-Domain Counsel · Quality Inspector, Technical & IP Strategy",
-    image: "/blog/trademark.jpg",
-    tags: ["Trademark", "IPR", "Brand Protection", "MSME", "Copyright"],
-    excerpt:
-      "Protect your brand identity from counterfeiters. Learn how to conduct trademark search across 45 classes, file Form TM-A, overcome Section 9 and 11 objections, and secure your registration certificate.",
-    content: [
-      {
-        heading: "1. Why Brand Registration is Indispensable",
-        paragraphs: [
-          "In a competitive digital marketplace, brand recognition is your greatest asset. Filing a trademark gives you exclusive statutory rights across all states in India under the Trade Marks Act, 1999.",
-          "Using an unregistered mark leaves you vulnerable to competitors copying your logo, domain, and packaging, forcing you into expensive passing-off civil suits rather than swift statutory infringement remedies.",
-        ],
-      },
-      {
-        heading: "2. The 45 Trademark Classes & Comprehensive Search",
-        paragraphs: [
-          "Trademarks are classified under the international Nice Classification: Classes 1 to 34 cover physical goods, and Classes 35 to 45 cover services.",
-          "Before filing, our IP attorneys conduct a thorough phonetical, visual, and semantic search on the IP India public portal to confirm no confusingly similar prior marks exist.",
-        ],
-      },
-      {
-        heading: "3. Filing Form TM-A: Govt Fees & Concessions",
-        paragraphs: [
-          "Individuals, startups, and MSMEs (holding Udyam certificate) enjoy a 50% discount on official government filing fees (₹4,500 for online filing vs ₹9,000 for corporations).",
-          "Once the application is lodged, you gain the immediate legal right to append the ™ symbol beside your brand.",
-        ],
-      },
-      {
-        heading: "4. Overcoming Examination Objections (Section 9 & 11)",
-        paragraphs: [
-          "Within 1–3 months, the Examiner of Trade Marks issues an Examination Report. Objections typically arise under Section 9 (lack of distinctiveness) or Section 11 (similarity with existing mark).",
-          "Submitting a meticulous legal response with evidence of prior commercial use, invoices, user affidavits, and case precedents within 30 days is vital to secure advertisement in the Trade Marks Journal.",
-        ],
-      },
-      {
-        heading: "5. Journal Publication & Certificate Issuance",
-        paragraphs: [
-          "Once advertised in the Journal, third parties have a 4-month window to file oppositions. If no opposition is filed, the Registrar issues the Registration Certificate with the coveted ® symbol, valid for 10 years and perpetually renewable.",
-        ],
-      },
-    ],
-    legalDisclaimer:
-      "Trademark availability requires specific search verification with the Trade Marks Registry. Consult MK Associates for brand clearance.",
-  },
-  {
     id: 4,
     slug: "pil-in-india-when-how-to-file",
     title: "PIL in India: When and How to File a Public Interest Litigation",
@@ -265,13 +212,6 @@ export const articles: Article[] = [
         paragraphs: [
           "If you fall victim to financial cyber fraud, report it within the first 1 to 2 hours ('The Golden Hour') by calling the National Cyber Crime Helpline: 1930.",
           "The Indian Cyber Crime Coordination Centre (I4C) coordinates with banks and payment gateways to freeze the beneficiary account before the fraudster withdraws the money through ATMs or converts it into cryptocurrency.",
-        ],
-      },
-      {
-        heading: "4. Filing a Formal FIR & Magistrate Court Orders",
-        paragraphs: [
-          "Always file an official written complaint at your nearest Cyber Crime Police Station or online at cybercrime.gov.in. Preserve all transaction IDs, bank SMS, call recordings, and email headers.",
-          "If police delay investigation, our legal counsel files Section 156(3) petitions before the Judicial Magistrate to direct immediate registration of FIR and forensic device seizures.",
         ],
       },
     ],

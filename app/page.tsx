@@ -139,14 +139,14 @@ const blogPosts = [
       "A practical guide to GST registration, filing deadlines, and avoiding common compliance pitfalls.",
   },
   {
-    slug: "how-to-register-trademark-in-india-step-by-step",
-    title: "How to Register a Trademark in India",
-    hindi: "भारत में ट्रेडमार्क पंजीकरण कैसे करें",
-    date: "Sep 1, 2026",
-    category: "IPR",
-    image: "/blog/trademark.jpg",
+    slug: "property-disputes-in-india-legal-routes-remedies",
+    title: "Property Disputes: Legal Routes & Remedies",
+    hindi: "भारत में संपत्ति विवाद: कानूनी रास्ते एवं उपाय",
+    date: "Aug 10, 2026",
+    category: "Civil Law",
+    image: "/blog/property.jpg",
     excerpt:
-      "Step-by-step process for trademark registration, from filing to approval. Protect your brand today.",
+      "Land encroachment, boundary overlaps, forged sale deeds, and ancestral partition disputes under Civil & Revenue laws.",
   },
 ];
 
