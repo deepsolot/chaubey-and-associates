@@ -12,6 +12,7 @@ import {
   Cpu,
   Star,
   GraduationCap,
+  Building2,
 } from "lucide-react";
 
 const advocates = [
@@ -402,6 +403,89 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ===== TECHNICAL ADVISOR SECTION ===== */}
+      <section className="py-20 bg-[#080808] border-t border-[#D4AF37]/15">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <div className="section-label mb-3">Expert Advisory · तकनीकी सलाहकार</div>
+            <h2 className="section-title">
+              Technical <span>Advisor</span>
+            </h2>
+            <p className="text-white/50 max-w-xl mx-auto mt-3 text-sm">
+              Engineering, municipal compliance, and infrastructure consulting supporting complex civil and property litigation.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <div className="glass-card p-8 md:p-10 border border-[#D4AF37]/30 rounded-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl pointer-events-none" />
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+                {/* Photo */}
+                <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-2xl overflow-hidden border-2 border-[#D4AF37]/60 shadow-xl shrink-0">
+                  <Image
+                    src="/abhilash-tiwari.jpg"
+                    alt="Mr. Abhilash Tiwari - Technical Advisor"
+                    fill
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-2 left-2 right-2 text-center">
+                    <span className="badge text-[0.6rem] bg-black/80 backdrop-blur-md border-[#D4AF37]/40 text-[#D4AF37]">
+                      Civ. Eng.
+                    </span>
+                  </div>
+                </div>
+
+                {/* Details */}
+                <div className="flex-1 text-center md:text-left">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                    <div>
+                      <h3 className="font-serif text-2xl text-white font-bold">
+                        Mr. Abhilash Tiwari
+                      </h3>
+                      <p className="text-[#D4AF37] text-sm font-display font-600 tracking-wide">
+                        Technical Advisor (Civil Engineering)
+                      </p>
+                    </div>
+                    <div className="inline-flex items-center justify-center gap-1.5 bg-[#D4AF37]/10 border border-[#D4AF37]/30 px-3 py-1.5 rounded-lg shrink-0 self-center sm:self-auto">
+                      <span className="font-serif text-xl text-[#D4AF37] font-bold">6</span>
+                      <span className="text-white/60 text-xs font-display">Years Exp.</span>
+                    </div>
+                  </div>
+
+                  <p className="text-white/40 text-xs mb-3 flex items-center justify-center md:justify-start gap-2">
+                    <Building2 size={13} className="text-[#D4AF37] shrink-0" />
+                    Currently working with Nagar Nigam Varanasi · नगर निगम वाराणसी
+                  </p>
+
+                  <p className="text-white/70 text-sm leading-relaxed mb-6">
+                    Mr. Abhilash Tiwari is an experienced Civil Engineer currently working with Nagar Nigam Varanasi. Bringing 6 years of frontline municipal and infrastructure experience, he advises MK Associates on technical engineering evaluations, structural compliance, municipal regulations, and site assessment for property and civil disputes.
+                  </p>
+
+                  <div>
+                    <p className="text-[#D4AF37]/70 text-xs font-display uppercase tracking-widest mb-3 font-600">
+                      Key Advisory Areas
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-left">
+                      {[
+                        "Municipal & Urban Infrastructure Compliance",
+                        "Structural & Site Survey Evaluations",
+                        "Building Bye-Laws & Sanction Plan Verifications",
+                        "Technical Dispute Reports for Civil Courts",
+                      ].map((item) => (
+                        <div key={item} className="flex items-start gap-2">
+                          <CheckCircle size={13} className="text-[#D4AF37] shrink-0 mt-0.5" />
+                          <span className="text-white/60 text-xs">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-20 bg-[#050505] border-t border-[#D4AF37]/10 text-center">
