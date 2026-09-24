@@ -63,9 +63,11 @@ export default function PortalPage() {
     if (!user?.email) return;
     setCasesLoading(true);
     try {
-      const q = query(collection(db, "cases"), where("clientEmail", "==", user.email), orderBy("createdAt", "desc"));
+      const q = query(collection(db, "cases"), where("clientEmail", "==", user.email));
       const snap = await getDocs(q);
-      setCases(snap.docs.map(d => ({ id: d.id, ...d.data() } as Case)));
+      const caseList = snap.docs.map(d => ({ id: d.id, ...d.data() } as Case & { createdAt?: { seconds?: number } }));
+      caseList.sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
+      setCases(caseList);
     } catch (e) { console.error(e); }
     finally { setCasesLoading(false); }
   }, [user]);

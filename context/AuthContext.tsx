@@ -7,7 +7,7 @@ import {
   signOut as firebaseSignOut,
   User,
 } from "firebase/auth";
-import { auth, googleProvider, ADMIN_EMAIL } from "@/lib/firebase";
+import { auth, googleProvider, ADMIN_EMAILS } from "@/lib/firebase";
 
 interface AuthContextType {
   user: User | null;
@@ -45,7 +45,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await firebaseSignOut(auth);
   };
 
-  const isAdmin = user?.email === ADMIN_EMAIL;
+  const isAdmin = Boolean(user?.email && ADMIN_EMAILS.some(e => e.toLowerCase() === user.email?.toLowerCase()));
 
   return (
     <AuthContext.Provider value={{ user, isAdmin, isLoading, signInWithGoogle, signOut }}>

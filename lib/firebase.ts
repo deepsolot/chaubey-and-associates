@@ -18,7 +18,11 @@ const db = getFirestore(app);
 const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({ prompt: "select_account" });
 
-// Admin Gmail — only this account gets write access
-export const ADMIN_EMAIL = "maddydragon85@gmail.com";
+// Admin Gmails — authorized accounts with write/manage access
+export const ADMIN_EMAILS = [
+  "maddydragon85@gmail.com",
+  "deepaksolot@gmail.com"
+];
+export const ADMIN_EMAIL = ADMIN_EMAILS[0];
 
 export { app, auth, db, googleProvider };

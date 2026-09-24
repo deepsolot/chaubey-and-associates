@@ -2,26 +2,32 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Blog posts — anyone can read published, only admin can write
+    // Helper: checks if user is logged in as an authorized admin
+    function isAdmin() {
+      return request.auth != null && (
+        request.auth.token.email == "maddydragon85@gmail.com" ||
+        request.auth.token.email == "deepaksolot@gmail.com"
+      );
+    }
+
+    // Blog posts — public can read, admins have full write access
     match /blog_posts/{postId} {
       allow read: if true;
-      allow create, update, delete: if request.auth != null
-        && request.auth.token.email == "maddydragon85@gmail.com";
+      allow write: if isAdmin();
     }
 
-    // Users — each user reads/writes own profile; admin reads all
+    // Users collection — each user manages their own profile; admins can view and manage all
     match /users/{uid} {
       allow read, write: if request.auth != null && request.auth.uid == uid;
-      allow read, write: if request.auth != null
-        && request.auth.token.email == "maddydragon85@gmail.com";
+      allow read, write: if isAdmin();
     }
 
-    // Cases — client reads own cases; admin reads and writes all
+    // Cases collection — client can read cases matching their email; admins can read & write all
     match /cases/{caseId} {
-      allow read: if request.auth != null
-        && request.auth.token.email == resource.data.clientEmail;
-      allow read, write: if request.auth != null
-        && request.auth.token.email == "maddydragon85@gmail.com";
+      allow read: if request.auth != null && (
+        request.auth.token.email == resource.data.clientEmail || isAdmin()
+      );
+      allow write: if isAdmin();
     }
   }
 }
