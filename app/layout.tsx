@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     description:
       "New Zen Advocate — Expert Legal Counsel in Delhi, Varanasi & Kaimur. Call: +91 9305592322.",
   },
+  verification: {
+    google: "kghvuXby47Nft3RyA6MJ0fBpUbIM8y8s0dMoDGP5qiY",
+  },
   robots: {
     index: true,
     follow: true,
@@ -141,6 +144,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="kghvuXby47Nft3RyA6MJ0fBpUbIM8y8s0dMoDGP5qiY"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
