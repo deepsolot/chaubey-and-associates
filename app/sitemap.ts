@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { articles } from "@/data/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://newzenadvocate.com";
+  const baseUrl = "https://www.newzenadvocate.com";
 
   // Core static pages
   const staticRoutes: MetadataRoute.Sitemap = [

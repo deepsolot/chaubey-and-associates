@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin/", "/api/", "/portal/"],
     },
-    sitemap: "https://newzenadvocate.com/sitemap.xml",
+    sitemap: "https://www.newzenadvocate.com/sitemap.xml",
   };
 }

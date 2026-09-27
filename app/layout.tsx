@@ -4,7 +4,7 @@ import ConditionalLayout from "@/components/ConditionalLayout";
 import { AuthProvider } from "@/context/AuthContext";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://newzenadvocate.com"),
+  metadataBase: new URL("https://www.newzenadvocate.com"),
   title: "New Zen Advocate (MK Associates) | Expert Legal Panel — New Delhi · Varanasi · Kaimur",
   description:
     "New Zen Advocate (MK Associates) — Expert legal panel led by Adv. Manoj Kumar Chaubey and Adv. Madan Kumar Upadhyay. 100+ years combined legal expertise. High Court & District Court counsel in New Delhi, Varanasi (UP) & Kaimur (Bihar). Call: 9305592322.",
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     "best legal consultation Varanasi Delhi"
   ],
   alternates: {
-    canonical: "https://newzenadvocate.com",
+    canonical: "https://www.newzenadvocate.com",
   },
   openGraph: {
     title: "New Zen Advocate (MK Associates) | Expert Legal Panel",
     description:
       "New Zen Advocate (MK Associates) — 100+ years of combined legal expertise. Civil, Criminal, Corporate, Military, IPR, Family & Revenue Law. New Delhi · Varanasi · Kaimur.",
-    url: "https://newzenadvocate.com",
+    url: "https://www.newzenadvocate.com",
     siteName: "New Zen Advocate",
     type: "website",
     locale: "en_IN",
@@ -75,12 +75,12 @@ const legalServiceSchema = {
   "@graph": [
     {
       "@type": "LegalService",
-      "@id": "https://newzenadvocate.com/#legalservice",
+      "@id": "https://www.newzenadvocate.com/#legalservice",
       "name": "New Zen Advocate",
       "alternateName": ["MK Associates", "Newzen Advocate", "Chaubey and Associates"],
-      "url": "https://newzenadvocate.com",
-      "logo": "https://newzenadvocate.com/logo.png",
-      "image": "https://newzenadvocate.com/courtroom-panel.jpg",
+      "url": "https://www.newzenadvocate.com",
+      "logo": "https://www.newzenadvocate.com/logo.png",
+      "image": "https://www.newzenadvocate.com/courtroom-panel.jpg",
       "telephone": "+919305592322",
       "email": "maddydragon85@gmail.com",
       "priceRange": "₹₹",
@@ -125,12 +125,12 @@ const legalServiceSchema = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://newzenadvocate.com/#website",
-      "url": "https://newzenadvocate.com",
+      "@id": "https://www.newzenadvocate.com/#website",
+      "url": "https://www.newzenadvocate.com",
       "name": "New Zen Advocate",
       "description": "Official Legal Consultation and Advocate Portal for New Zen Advocate / MK Associates.",
       "publisher": {
-        "@id": "https://newzenadvocate.com/#legalservice"
+        "@id": "https://www.newzenadvocate.com/#legalservice"
       }
     }
   ]
